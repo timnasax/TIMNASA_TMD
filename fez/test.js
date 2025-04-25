@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { zokou } = require("../framework/zokou");
-zokou({ nomCom: "test", reaction: "🫐", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+const { timoth } = require("../timnasa/timoth");
+timoth({ nomCom: "test", reaction: "🫐", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = 'Hello my name is  *Timnasa md V9 * \n\n ' + "i'm a whatsapp bot multi-device created ";
+    let z = 'Hello my name is  *Timnasa md V9 * TIMNASA_TMD\n\n ' + "i'm a whatsapp bot multi-device created ";
     let d = ' by *Timnasa Tech*';
     let varmess = z + d;
     var img = 'https://i.ibb.co/pr5qVzvh/hanstz.jpg';
