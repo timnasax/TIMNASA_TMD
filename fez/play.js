@@ -8,7 +8,7 @@ timoth({
   nomCom: "play",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
-  reaction: "❤️"
+  reaction: "🪀"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, repondre } = commandOptions;
 
@@ -65,13 +65,13 @@ timoth({
     const downloadUrl = downloadData.result.download_url;
     const videoDetails = downloadData.result;
     zk.sendMessage(dest, {
-      text: "```ALONE MD SONG DOWNLOADER```",
+      text: "```TIMNASA TMD SONG DOWNLOADER```",
       audio: { url: downloadUrl },
         mimetype: 'audio/mp4',
       contextInfo: {
         externalAdReply: {
           title: "Follow for fantastic updates",
-          body: "ALONE MD SONG DOWNLOADER",
+          body: "TIMNASA TMD SONG DOWNLOADER",
           thumbnailUrl: conf.URL,
           sourceUrl: conf.GURL,
           mediaType: 1,
@@ -114,7 +114,7 @@ timoth({
   nomCom: "song",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
-  reaction: "❤️"
+  reaction: "🪀"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, repondre } = commandOptions;
 
@@ -177,7 +177,7 @@ timoth({
       contextInfo: {
         externalAdReply: {
           title: "Follow for fantastic updates",
-          body: "ALONE MD SONG DOWNLOADER",
+          body: "TIMNASA TMD SONG DOWNLOADER",
           thumbnailUrl: conf.URL,
           sourceUrl: conf.GURL,
           mediaType: 1,
@@ -279,13 +279,13 @@ timoth({
     const downloadUrl = downloadData.result.download_url;
     const videoDetails = downloadData.result;
     zk.sendMessage(dest, {
-      text: "```ALONE MD VIDEO DOWNLOADER```",
+      text: "```TIMNASA TMD VIDEO DOWNLOADER```",
       audio: { url: downloadUrl },
         mimetype: 'audio/mp4',
       contextInfo: {
         externalAdReply: {
           title: "Follow for fantastic updates",
-          body: "ALONE MD VIDEO DOWNLOADER",
+          body: "TIMNASA TMD VIDEO DOWNLOADER",
           thumbnailUrl: conf.URL,
           sourceUrl: conf.GURL,
           mediaType: 1,
