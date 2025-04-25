@@ -5,7 +5,9 @@
 
   <!-- Repo Activity Stats Screen -->
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=deshallos1&repo=Rahzayn" alt="Pinned GitHub Repo Activity" width="800"> 
-  > ##Testing...##
+  # ☉︎𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙴𝙲𝙷☉︎ ©𝟸𝟶𝟸𝟻
+  █▄▄ ███ █▄▄█▄▄ ███ █▄▄
+  █▄▄ ███ █▄▄█▄▄ ███ █▄▄
   
 ![](gravity.gif)
    
