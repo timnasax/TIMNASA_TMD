@@ -7,7 +7,7 @@ const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
-timoth({ nomCom: "menu0", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "menu2", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../timnasa//timoth");
     var coms = {};
@@ -33,7 +33,7 @@ const date = moment().format('DD/MM/YYYY');
 ┃⊛│◆ 𝚁𝚊𝚖  : 𝟴/𝟭𝟯𝟮 𝗚𝗕
 ┃⊛│◆ 𝙳𝚊𝚝𝚎  : *${date}* 
 ┃⊛│◆ 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()}
-┃⊛│◆ 𝙲𝚛𝚎𝚊𝚝𝚘𝚛 : Enb Tech
+┃⊛│◆ 𝙲𝚛𝚎𝚊𝚝𝚘𝚛 : timnasa
 ┃⊛│◆ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 : ${cm.length}
 ┃⊛│◆ 𝚃𝚑𝚎𝚖𝚎 : timnasa
 ┃⊛└▰▱▰▱▰▱▰▱➻
