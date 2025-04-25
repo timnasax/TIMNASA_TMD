@@ -4,7 +4,7 @@ const {
 const {
   format,
   runtime
-} = require('../framework/mesfonctions');
+} = require('../timnasa/mesfonctions');
 const os = require('os');
 const speed = require('performance-now');
 const {
