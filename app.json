@@ -1,6 +1,6 @@
 {
   "name": "⁠TIMNASA-TMD MULT DEVICE",
-  "description": "TIMNASA-XMD Whatsapp device bot made by TIMOTH TIMNASA to help Whatsapp users to enjoy while helping...",
+  "description": "TIMNASA-TMD Whatsapp device bot made by TIMOTH TIMNASA to help Whatsapp users to enjoy while helping...",
   "keywords": [
     "bot",
     "node",
@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://files.catbox.moe/snh8mc.jpeg",
-  "repository": "https://github.com/next55x/Testing",
+  "repository": "https://github.com/timnasax/TIMNASA_TMD",
   "succes_url": "/",
   "stack": "container",
   "env": {
