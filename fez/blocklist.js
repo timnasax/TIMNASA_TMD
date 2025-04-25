@@ -1,6 +1,6 @@
-const { zokou } = require("../framework/zokou");
+const { timoth } = require("../timnasa/timoth");
 
-zokou({
+timoth({
   nomCom: "blocklist",
   aliases: ["listblock", "blacklist"],
   reaction: '☘️',
