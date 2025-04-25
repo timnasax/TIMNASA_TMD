@@ -1,10 +1,10 @@
 const {
   timoth
-} = require("./../timnasa/timoth");
+} = require("/../timnasa/timoth");
 const {
   format,
   runtime
-} = require('../timnasa/mesfonctions');
+} = require('/../timnasa/mesfonctions');
 const os = require('os');
 const speed = require('performance-now');
 const {
