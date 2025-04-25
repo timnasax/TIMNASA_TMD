@@ -1,4 +1,4 @@
-const { zokou } = require(__dirname + "/../framework/zokou");
+const { timoth } = require(__dirname + "/../timnasa/timoth");
 
 // Function to convert text to fancy uppercase font
 const toFancyUppercaseFont = (text) => {
@@ -19,7 +19,7 @@ const toFancyLowercaseFont = (text) => {
 }
 
 // Command to list all bot commands along with descriptions and aliases
-zokou({
+timoth({
     nomCom: "help",
     reaction: "💬",
     aliases: ["panelist", "commandlist", "cmdlist", "list"],
@@ -27,7 +27,7 @@ zokou({
     categorie: "universal"
 }, async (dest, zk, context) => {
     const { respond, prefix, nomAuteurMessage } = context;
-    const commands = require(__dirname + "/../framework/zokou").cm;
+    const commands = require(__dirname + "/../timnasa/timoth").cm;
 
     let menu = 'TIMNASA TMD\n\n';
     let keithList = [];
