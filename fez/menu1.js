@@ -7,7 +7,7 @@ const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
-timoth({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "menu0", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../timnasa//timoth");
     var coms = {};
@@ -35,10 +35,10 @@ const date = moment().format('DD/MM/YYYY');
 ┃⊛│◆ 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()}
 ┃⊛│◆ 𝙲𝚛𝚎𝚊𝚝𝚘𝚛 : Enb Tech
 ┃⊛│◆ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 : ${cm.length}
-┃⊛│◆ 𝚃𝚑𝚎𝚖𝚎 : FEZGON
+┃⊛│◆ 𝚃𝚑𝚎𝚖𝚎 : timnasa
 ┃⊛└▰▱▰▱▰▱▰▱➻
 ╰▱▰▱▰▱▰⊷▱▰▱▰▱❂\n${readmore}`;
-    let menuMsg = `E.n.b 𝙼𝚍 𝙲𝚖𝚍`;
+    let menuMsg = `timnasa 𝙲𝚖𝚍`;
     for (const cat in coms) {
         menuMsg += `
 ╭▱▱▱✺ *${cat}* ✺▰▰▰⊷ 
@@ -53,7 +53,7 @@ const date = moment().format('DD/MM/YYYY');
 ╰▰▰▰═⊷✺•∞•✺⊷═▱▱▱⊷`
     }
     menuMsg += `
-> Made By Grayson\n
+> Made By timnasa\n
 `;
    var lien = mybotpic();
    if (lien.match(/\.(mp4|gif)$/i)) {
