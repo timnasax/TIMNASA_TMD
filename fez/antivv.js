@@ -1,6 +1,6 @@
-const { smd, bot_ } = require("../lib");
+const { timoth } = require("../timnasa/timoth");
 let bgmm = false;
-smd(
+timoth(
   {
     cmdname: "antiviewonce",
     alias: ["antivv"],
@@ -57,13 +57,13 @@ smd(
       }
     } catch (_0x4bb48d) {
       await _0x5c3dd1.error(
-        _0x4bb48d + "\n\nCommand: AntiViewOnce ",
+        _0x4bb48d + "timnasa\n\nCommand: AntiViewOnce ",
         _0x4bb48d
       );
     }
   }
 );
-smd(
+timoth(
   {
     on: "viewonce",
   },
