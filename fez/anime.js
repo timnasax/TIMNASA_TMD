@@ -1,10 +1,10 @@
 
 const axios = require("axios");
-const {zokou} = require("../framework/zokou");
-const traduire = require("../framework/traduction");
+const {timoth} = require("../timnasa/timoth");
+const traduire = require("../timnasa/traduction");
 const {Sticker ,StickerTypes}= require('wa-sticker-formatter');
 
-zokou({
+timoth({
   nomCom: "ranime",
   categorie: "Fun",
   reaction: "📺"
@@ -36,7 +36,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-zokou({
+timoth({
   nomCom: "google",
   categorie: "Search"
 }, async (dest, zk, commandeOptions) => {
@@ -65,7 +65,7 @@ zokou({
   }
 });
 
-zokou({
+timoth({
   nomCom: "imdb",
   categorie: "Search"
 }, async (dest, zk, commandeOptions) => {
@@ -115,7 +115,7 @@ zokou({
   }
 });
 
-zokou({
+timoth({
   nomCom: "movie",
   categorie: "Search"
 }, async (dest, zk, commandeOptions) => {
@@ -132,7 +132,7 @@ zokou({
     const imdbData = response.data;
 
     let imdbInfo = "THANKS ALL FOR THE SUPPORT ITS ME PKDRILLER \n";
-    imdbInfo += " ``` QUEEN-M FILMS```\n";
+    imdbInfo += " ``` TIMNASA FILMS```\n";
     imdbInfo += "*Made by Ibrahim Adams*\n";
     imdbInfo += "🎬Title    : " + imdbData.Title + "\n";
     imdbInfo += "📅year      : " + imdbData.Year + "\n";
@@ -165,7 +165,7 @@ zokou({
   }
 });
 
-zokou({
+timoth({
   nomCom: "emomix",
   categorie: "Conversion"
 }, async (dest, zk, commandeOptions) => {
