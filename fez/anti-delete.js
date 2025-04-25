@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { timoth } = require("../timnasa/timoth");
 
 // Store Anti-Delete status per chat (group or personal)
 const antiDeleteStatus = new Map();
@@ -18,7 +18,7 @@ module.exports.antiDeleteHandler = async (message, zk) => {
         let content = extractMessageContent(deletedMessage.message);
         
         if (content) {
-          let text = `*🚨 Anti-Delete Alert!*\n👤 *Sender:* @${sender.split('@')[0]}\n📩 *Recovered Message:* ${content}`;
+          let text = `*🚨 Anti-Delete Alert!*TIMNASA-MD\n👤 *Sender:* @${sender.split('@')[0]}\n📩 *Recovered Message:* ${content}`;
           await zk.sendMessage(chatId, { text, mentions: [sender] });
         }
       }
