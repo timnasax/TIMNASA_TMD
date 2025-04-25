@@ -1,16 +1,16 @@
 const util = require('util');
 const fs = require('fs-extra');
-const { ezra } = require(__dirname + "/../fredi/ezra");
-const { format } = require(__dirname + "/../fredi/mesfonctions");
+const { timoth } = require(__dirname + "/../timnasa/timoth");
+const { format } = require(__dirname + "/../timnasa/mesfonctions");
 const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
 
-ezra({ nomCom: "repo", categorie: "My Contact" }, async (dest, zk, commandeOptions) => {
+ezra({ nomCom: "sc", categorie: "My Contact" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../fredi//ezra");
+    let { cm } = require(__dirname + "/../timnasa//timoth);
     var coms = {};
     var mode = "public";
     
@@ -36,7 +36,7 @@ const date = moment().format('DD/MM/YYYY');
   let infoMsg =  `
 ❂━━━════──⊷𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙼𝙳𝟷 𝚁𝙴𝙿𝙾──════━━━❂
    *TIMNASA TMD1 REPO FORK AND STAR⭐
-   >repo:'https://github.com/Next5x/TIMNASA_TMD1
+   >repo:'https://github.com/timnasax/TIMNASA_TMD
 
 *WHATSAPP CHANNEL*
 > https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31 
@@ -51,7 +51,7 @@ const date = moment().format('DD/MM/YYYY');
 let menuMsg = `
      ╭──━━━━══⊷══━━━━⦿
      ┃ ❂━━━━━━━━━━━━❂
-     ┃▓ TIMNASA MD REPO
+     ┃▓   *TIMNASA MD SC*
      ┃ ❂━━━━━━━━━━━━❂
      ╰──━━━━══⊷══━━━━⦿
      █▬█ █ ▀█▀ █▬█ █ ▀█▀
