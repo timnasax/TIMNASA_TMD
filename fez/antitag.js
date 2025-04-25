@@ -1,9 +1,9 @@
-const { zokou } = require("../framework/zokou");
+const { timoth } = require("../timnasa/timoth");
 
 // Store anti-tag state per group (better for multi-group support)
 const antiTagStatus = new Map();
 
-zokou({
+timoth({
   nomCom: "antitag",
   categorie: "Group",
   reaction: "⚠️",
