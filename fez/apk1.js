@@ -1,4 +1,4 @@
-const {zokou} = require("../framework/zokou");
+const {timoth} = require("../timnasa/timoth");
 const fs = require('fs-extra');
 const conf = require('../set');
 const { default: axios } = require("axios");
@@ -6,7 +6,7 @@ const ffmpeg = require("fluent-ffmpeg");
 const gis = require('g-i-s');
 
 
-zokou({
+timoth({
   'nomCom': 'apk',
   'aliases': ['app', 'playstore'],
   'reaction': '🉑',
