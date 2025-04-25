@@ -12,9 +12,9 @@ const {
 } = require('perf_hooks');
 const conf = require('../set');
 
-timnasa(
+timoth(
   {
-    nomCom: 'ping',
+    nomCom: 'ing',
     categorie: 'General',
     reaction: '🚀',
     alias: ['p']
@@ -46,7 +46,7 @@ timnasa(
 
 timoth(
   {
-    nomCom: 'desc',
+    nomCom: 'day',
     reaction: 'ℹ',
     alias: ['i']
   },
@@ -123,7 +123,7 @@ _CPU Core(s) Usage (${cpus.length} Core CPU)_
 
 timoth(
   {
-    nomCom: 'uptime',
+    nomCom: 'ptime',
     reaction: '🚨',
     alias: ['uptime']
   },
