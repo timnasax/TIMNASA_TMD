@@ -1,10 +1,10 @@
-const { zokou } = require("../framework/zokou");
+const { timoth } = require("../timnasa/timoth");
 const axios = require('axios');
 const ytSearch = require('yt-search');
 const conf = require(__dirname + '/../set');
 
 // Define the command with aliases for play
-zokou({
+timoth({
   nomCom: "play",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
@@ -110,7 +110,7 @@ zokou({
     return repondre(`Download failed due to an error: ${error.message || error}`);
   }
 });
-zokou({
+timoth({
   nomCom: "song",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
@@ -218,7 +218,7 @@ zokou({
 });
 
 // Define the command with aliases for video
-zokou({
+timoth({
   nomCom: "video",
   aliases: ["videodoc", "film", "mp4"],
   categorie: "Search",
