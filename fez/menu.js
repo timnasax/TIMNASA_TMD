@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
 
-timoth({ nomCom: "menuu", categorie: "General" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../timnasa//timoth");
     var coms = {};
@@ -34,7 +34,7 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╭──────────────────❂
-┊❂╭───*𝐀𝐍𝐘𝐖𝐀𝐘-𝐗𝐌𝐃*────❂
+┊❂╭───*𝗧𝗜𝗠𝗡𝗔𝗦𝗔 𝗧𝗠𝗗*────❂
 ┊✺┊ *User* : ${s.OWNER_NAME}
 ┊✺┊ *Mode* : ${mode}
 ┊✺╰───────────────❂
@@ -44,24 +44,24 @@ const date = moment().format('DD/MM/YYYY');
 ╰──────────────────❂ \n\n`;
  
     let menuMsg=`  
-  **𝐀𝐍𝐘𝐖𝐀𝐘-𝐗𝐌𝐃 COMMANDS*
+  **𝗧𝗜𝗠𝗡𝗔𝗦𝗔 𝗧𝗠𝗗 COMMANDS*
 `;
 
     for (const cat in coms) {
-        menuMsg += `*╭────❂* *${cat}* *❂*`;
+        menuMsg += `*╭────❂* *${cat}* *┊❂┊*`;
         for (const cmd of coms[cat]) {
             menuMsg += `  
-*┊❂* ${cmd}`;
+*┊❂┊* ${cmd}`;
         }
         menuMsg += `
-*╰═════════════❂* \n`
+┊*╰═════════════❂* timnasa\n`
     }
 
     menuMsg += `
-◇            ◇
+┊◇┊            ◇
 *—————✺✺✺✺—————*
 
-  *𝐀𝐍𝐘𝐖𝐀𝐘-𝐗𝐌𝐃*                                         
+  *𝗧𝗜𝗠𝗡𝗔𝗦𝗔 𝗧𝗠𝗗*                                         
 *╰═════════════❂*
 `;
 
