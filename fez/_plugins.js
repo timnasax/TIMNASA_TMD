@@ -1,8 +1,8 @@
-const { plugins, smd, Config } = require("../lib");
+const { plugins, smd, Config } = require("/../timnasa/timoth");
 let s_ser = true;
 
 // Restart command
-smd(
+timoth(
  {
    cmdname: "restart",
    info: "To restart bot",
@@ -18,7 +18,7 @@ smd(
 );
 
 // ShutDown command
-smd(
+timoth(
   {
     cmdname: "shutdown",
     info: "To shutdown bot",
@@ -34,7 +34,7 @@ smd(
  );
 
 // Installed plugins command
-smd(
+timoth(
  {
    cmdname: "plugins",
    alias: ["plugin"],
@@ -61,7 +61,7 @@ smd(
 );
 
 // Remove plugin command
-smd(
+timoth(
  {
    pattern: "uninstall",
    alias: ["remove"],
@@ -90,7 +90,7 @@ smd(
 );
 
 // Install plugin command
-smd(
+timoth(
  {
    cmdname: "install",
    type: "owner",
