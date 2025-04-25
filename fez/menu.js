@@ -54,7 +54,7 @@ const date = moment().format('DD/MM/YYYY');
 *┊❂┊* ${cmd}`;
         }
         menuMsg += `
- ┊*╰═════════════❂* \n`
+ *┊❂╰═════════════❂* \n`
     }
 
     menuMsg += `
