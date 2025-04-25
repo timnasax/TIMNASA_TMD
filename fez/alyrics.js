@@ -1,8 +1,8 @@
-const { zokou } = require('../framework/zokou');
+const { timoth } = require('../timnasa/timoth');
 const lyricsFinder = require('lyrics-finder');
 const yts = require('yt-search');
 
-zokou({
+timoth({
     nomCom: 'lyrics1',
     aliases: ['lyric', 'mistari'],
     reaction: '📑',
@@ -42,7 +42,7 @@ zokou({
 
         // Format the message to send to the user
         const formattedMessage = `
-*QUEEN 👑 M LYRICS FINDER*
+*TIMNASA LYRICS FINDER*
 *Title:* ${title}
 *Artist:* ${artist}
 
