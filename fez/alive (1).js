@@ -1,8 +1,8 @@
-const { cmd, commands } = require('../command');
+const { timnasa, timoth } = require('../timnasa/timoth');
 const os = require("os");
-const { runtime } = require('../lib/functions');
+const { runtime } = require('../timnasa/functions');
 
-cmd({
+timoth({
     pattern: "alive",
     alias: ["status", "runtime", "uptime"],
     desc: "Check uptime and system status",
