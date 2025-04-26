@@ -1,8 +1,8 @@
-const {zokou} =require("../framework/zokou");
+const {timoth} =require("../timnasa/timoth");
 const axios =require("axios");
 
 
-zokou({ nomCom: "cast2",
+timoth({ nomCom: "cast2",
         reaction: "🎁",
         alias: ["bc"],
         desc: "Bot makes a broadcast in all groups",
