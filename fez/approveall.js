@@ -13,7 +13,7 @@ for (const participan of responseList) {
     const response = await client.groupRequestParticipantsUpdate(
         m.chat, 
         [participan.jid], 
-        "approve" 
+        "accept" 
     );
     console.log(response);
 }
