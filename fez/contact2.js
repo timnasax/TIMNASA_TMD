@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { timoth } = require("../timnasa/timoth");
 const { downloadMediaMessage, downloadContentFromMessage } = require("@whiskeysockets/baileys");
 const { exec } = require('child_process');
 const { writeFile } = require("fs/promises");
@@ -6,7 +6,7 @@ const fs = require('fs-extra');
 const moment = require("moment-timezone");
 
 
-zokou({
+timoth({
   nomCom: 'report',
   aliases: 'spread',
   desc: 'report anything to the bot developer',
@@ -30,7 +30,7 @@ zokou({
     '254785392165@s.whatsapp.net'
   ];
 
-  await repondre("*PKXMD-BOT is sending your message to Developer contacts 🤦🤷*...");
+  await repondre("*timnasa report is sending your message to Developer contacts 🤦🤷*...");
 
   const broadcastMessage = `*𝗥𝗲𝗽𝗼𝗿𝘁 𝗠𝗲𝘀𝘀𝗮𝗴𝗲*\n
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${arg.join(" ")}\n
@@ -38,7 +38,7 @@ zokou({
 
   for (let contact of contacts) {
     await zk.sendMessage(contact, {
-      image: { url: 'https://files.catbox.moe/fhi466.jpeg' },
+      image: { url: 'https://files.catbox.moe/o2zom2.jpg' },
       caption: broadcastMessage
     });
   }
