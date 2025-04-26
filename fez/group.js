@@ -31,7 +31,7 @@ timoth({ nomCom: "tagall", categorie: 'Group', reaction: "📯" }, async (dest, 
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        🌟 *TIMNASA-TMD*𝕋𝔸𝔾𝔾𝔼𝔻 🌟
+        🌟 *TIMNASA-TMD TAGALL* 🌟
 ========================\n
 👥 Group : ${nomGroupe} 🚀 
 👤 Autor : *${nomAuteurMessage}* 👋 
@@ -72,7 +72,7 @@ timoth({ nomCom: "link", categorie: 'Group', reaction: "🚜" }, async (dest, zk
 
   let mess = `hello ${nomAuteurMessage} , here is the group link for ${nomGroupe} \n
 
-Grp link :${lien} \n\n★𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢  TIMNASA-TMD 𝚃𝚣`
+Grp link :${lien} \n\n★𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢  𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙴𝙲𝙷`
   repondre(mess)
 
 
