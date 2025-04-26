@@ -1,5 +1,5 @@
-let {smd} = require("../lib")
-smd({
+let {timoth} = require("../timnasa/timoth")
+timoth({
 	pattern: 'clear',
 	fromMe: true,
 	desc: 'delete whatsapp chat',
@@ -22,7 +22,7 @@ smd({
 
 
 
-smd({
+timoth({
 	pattern: 'archive',
 	fromMe: true,
 	desc: 'archive whatsapp chat',
@@ -45,7 +45,7 @@ smd({
 
 
 
-smd({
+timoth({
 	pattern: 'unarchive',
 	fromMe: true,
 	desc: 'unarchive whatsapp chat',
@@ -67,7 +67,7 @@ smd({
 
 
 
-smd({
+timoth({
 	pattern: 'chatpin',
   alias :["pinchat"],
 	fromMe: true,
@@ -84,7 +84,7 @@ smd({
 
 
 
-smd({
+timoth({
 	pattern: 'unpin',
   alias :["unpinchat","chatunpin"],
 	fromMe: true,
@@ -101,7 +101,7 @@ smd({
 
 
 
-smd({
+timoth({
 	pattern: 'markread',
 	fromMe: true,
 	desc: 'mark as readed',
@@ -120,7 +120,7 @@ smd({
 
 
 
-smd({
+timoth({
 	pattern: 'markunread',  
 	fromMe: true,
 	desc: 'mark as UnRead',
@@ -143,7 +143,7 @@ smd({
 
 
 
-smd({
+timoth({
 	pattern: 'unmutechat',
 	fromMe: true,
 	desc: 'unmute a chat',
@@ -156,7 +156,7 @@ smd({
 
 })
 
-smd({
+timoth({
 	pattern: 'profilename',
 	fromMe: true,
 	desc: 'To change your profile name',
@@ -181,7 +181,7 @@ smd({
 
 
 
-smd({
+timoth({
 	pattern: 'getprivacy',
 	fromMe: true,
 	desc: 'get your privacy settings',
@@ -219,7 +219,7 @@ smd({
 
 
 
-smd({
+timoth({
 	pattern: 'lastseen',
 	fromMe: true,
 	desc: 'to change lastseen privacy',
@@ -235,7 +235,7 @@ smd({
 })
 
 
-smd({
+timoth({
 	pattern: 'online',
 	fromMe: true,
 	desc: 'to change online privacy',
@@ -251,7 +251,7 @@ smd({
 })
 
 
-smd({
+timoth({
 	pattern: 'mypp',
 	fromMe: true,
 	desc: 'privacy setting profile picture',
@@ -266,7 +266,7 @@ smd({
 }catch(e){ message.error(`${e}\n\nCommand : mypp` , e, false) }
 })
 
-smd({
+timoth({
 	pattern: 'mystatus',
 	fromMe: true,
 	desc: 'privacy for my status',
@@ -281,7 +281,7 @@ smd({
 }catch(e){ message.error(`${e}\n\nCommand : mystatus` , e, false) }
 })
 
-smd({
+timoth({
 	pattern: 'read',
 	fromMe: true,
 	desc: 'privacy for read message',
@@ -296,7 +296,7 @@ smd({
 }catch(e){ message.error(`${e}\n\nCommand : read` , e, false) }
 })
 
-smd({
+timoth({
 	pattern: 'groupadd',
 	fromMe: true,
 	desc: 'privacy for group add',
