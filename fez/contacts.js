@@ -1,6 +1,6 @@
-const { zokou } = require("../framework/zokou");
+const { timoth } = require("../timnasa/timoth");
 const moment = require("moment-timezone");
-const { getBuffer } = require("../framework/dl/Function");
+const { getBuffer } = require("../timnasa/dl/Function");
 const { default: axios } = require('axios');
 
 const runtime = function (seconds) { 
@@ -17,7 +17,7 @@ const runtime = function (seconds) {
  } 
 
 
-zokou({ nomCom: 'love',
+timoth({ nomCom: 'love',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '📄', 
@@ -37,7 +37,7 @@ zokou({ nomCom: 'love',
 );
 
 
-zokou({ nomCom: 'getall',
+timoth({ nomCom: 'getall',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '😎', 
@@ -56,7 +56,7 @@ zokou({ nomCom: 'getall',
   }
 );
 
-zokou({ nomCom: 'go',
+timoth({ nomCom: 'go',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '📄', 
@@ -74,7 +74,7 @@ zokou({ nomCom: 'go',
   }
 );
 
-zokou({ nomCom: 'channel',
+timoth({ nomCom: 'channel2',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🍁', 
@@ -85,14 +85,14 @@ zokou({ nomCom: 'channel',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x`) 
+                 await repondre(`https://whatsapp.com/channel/0029Vb9kKuVCMY0F5rmX2j1u`) 
 
    
 
 
   }
 );
-zokou({ nomCom: 'rtime',
+timoth({ nomCom: 'rtime',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🍁', 
@@ -117,7 +117,7 @@ QUEEN-M👑 ᴏᴡɴᴇʀ sᴀʏs ᴍᴏsᴛ ᴏғ ᴜᴘᴅᴀᴛᴇs ᴀʀᴇ 
   }
 );
 
-zokou({ nomCom: 'channel1',
+timoth({ nomCom: 'channel',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🍁', 
@@ -128,7 +128,7 @@ zokou({ nomCom: 'channel1',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`tap here to join my second channel https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x`) 
+                 await repondre(`tap here to join my second channel https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31`) 
 
    
 
@@ -137,7 +137,7 @@ zokou({ nomCom: 'channel1',
 );
 
 
-zokou({ nomCom: 'pkl',
+timoth({ nomCom: 'pkl',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🤷', 
@@ -148,7 +148,7 @@ zokou({ nomCom: 'pkl',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*_Queen-m👑 is running...... Love it_*`) 
+                 await repondre(`*_𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙼𝙳 👑 is running...... Love it_*`) 
 
    
 
@@ -157,7 +157,7 @@ zokou({ nomCom: 'pkl',
 );
 
 
-zokou({ nomCom: 'vision',
+timoth({ nomCom: 'vision',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🔎', 
@@ -178,7 +178,7 @@ zokou({ nomCom: 'vision',
 
 
   
-zokou({ nomCom: 'group1',
+timoth({ nomCom: 'group1',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🤫', 
@@ -189,7 +189,7 @@ zokou({ nomCom: 'group1',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`top a link to join our group https://chat.whatsapp.com/CP8daWdavnXF11826hxius `) 
+                 await repondre(`top a link to join our group https://chat.whatsapp.com/JazGLNBxW5XDVEst3PN4kj `) 
 
    
 
@@ -198,7 +198,7 @@ zokou({ nomCom: 'group1',
 )
 
 
-zokou({ nomCom: 'scriptpk',
+timoth({ nomCom: 'scriptpk',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🐅', 
@@ -209,7 +209,7 @@ zokou({ nomCom: 'scriptpk',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`tap here to join our support channel https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x`) 
+                 await repondre(`tap here to join our support channel https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31`) 
 
 
 
@@ -217,7 +217,7 @@ zokou({ nomCom: 'scriptpk',
 )
 
 
-zokou({ nomCom: 'queen',
+timoth({ nomCom: 'timnasa',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🤷', 
@@ -228,7 +228,7 @@ zokou({ nomCom: 'queen',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*_YESS....I'M LISTENING TO YOU_*`) 
+                 await repondre(`*_YESS.. TIMNASA..I'M LISTENING TO YOU_*`) 
 
    
 
@@ -237,7 +237,7 @@ zokou({ nomCom: 'queen',
 );
 
 
-zokou({ nomCom: 'me',
+timoth({ nomCom: 'me',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🤷', 
@@ -248,7 +248,7 @@ zokou({ nomCom: 'me',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*check the developer via https://wa.me/c/254785392165*`) 
+                 await repondre(`*check the developer via https://wa.me/c/255784766591*`) 
 
    
 
@@ -257,7 +257,7 @@ zokou({ nomCom: 'me',
 );
 
 
-zokou({ nomCom: 'problem',
+timoth({ nomCom: 'problem',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '🤷', 
@@ -269,19 +269,19 @@ zokou({ nomCom: 'problem',
     const { ms, arg, repondre } = commandeOptions;
 
                  await repondre(`*┏━━━━━━━━━━━━━━
-┃PKXMD-BOT 🎉🎉🎉 
+┃𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙼𝙳 𝙱𝙾𝚃 🎉🎉🎉 
 | THUG 
 ┃LIFE💀
 ┗━━━━━━━━━━━━━━━
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = 𖥘 pkdriller 𖥘
+❶ || Creator = 𖥘 ©𝚝𝚒𝚖𝚗𝚊𝚜𝚊 𖥘
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || WhattsApp Channel = https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x
+❷ || WhattsApp Channel = https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 Please Follow My Support Channel
-Wanna talk to me?👉 https://wa.me/c/254785392165 👈
+Wanna talk to me?👉 https://wa.me/c/255784766591 👈
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-© *pk tech *`) 
+© *𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙴𝙲𝙷*`) 
 
    
 
