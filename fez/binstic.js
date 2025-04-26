@@ -1,8 +1,8 @@
-const { zokou } = require("../framework/zokou");
+const { timoth } = require("../timnasa/timoth");
 const axios = require("axios");
 const { Sticker, StickerTypes } = require("wa-sticker-formatter");
 
-zokou({
+timoth({
   'nomCom': 'telegramsc',
   'categorie': 'General'
 }, async (_0x2e51e1, _0x5b32f3, _0x2435f3) => {
@@ -34,7 +34,7 @@ zokou({
     const isAnimated = stickerSet.is_animated || stickerSet.is_video;
     const stickerType = isAnimated ? "animated sticker" : "not animated sticker";
 
-    const message = `Lucky-stickers-dl\n\n*Name:* ${stickerSet.name}\n*Type:* ${stickerType}\n*Length:* ${stickerSet.stickers.length}\n\nDownloading...`;
+    const message = `timnada-stickers-dl\n\n*Name:* ${stickerSet.name}\n*Type:* ${stickerType}\n*Length:* ${stickerSet.stickers.length}\n\nDownloading...`;
     await reply(message);
 
     for (const sticker of stickerSet.stickers) {
@@ -49,7 +49,7 @@ zokou({
 
       const stickerObject = new Sticker(fileBufferResponse.data, {
         pack: messageAuthor,
-        author: "HANS_MD",
+        author: "𝚃𝙸𝙼𝙽𝙰𝚂𝙰_𝚃𝙼𝙳",
         type: StickerTypes.FULL,
         categories: ['🤩', '🎉'],
         id: "12345",
@@ -65,6 +65,6 @@ zokou({
       });
     }
   } catch (error) {
-    reply("An error occurred:\n" + error.message);
+    reply("An error occurred:𝚃𝙸𝙼𝙽𝙰𝚂𝙰\n" + error.message);
   }
 });
