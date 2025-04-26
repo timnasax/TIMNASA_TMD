@@ -1,5 +1,5 @@
-const { zokou } = require("../framework/zokou");
-const { delay, loading, react } = require("../framework/mesfonction");
+const { timoth } = require("../timnasa/timoth");
+const { delay, loading, react } = require("../timnasa/mesfonction");
 const moment = require("moment-timezone");
 const conf = require("../set.js");
 const fs = require("fs");
@@ -9,7 +9,7 @@ const {
     tlang,
     prefix,
      } = require('../set')
-zokou({
+timoth({
     nomCom: "getall",
     desc: "get jid of all members of groups/pm chats/all groups.",
     type: "owner",
@@ -27,7 +27,7 @@ let str = "";
       if (!citel.isGroup) return citel.reply(tlang("group"));
       const participants = citel.metadata.participants || {};
       for (let i of participants) {    str += `📍 ${i.id}\n`;   }
-      str ? citel.reply(`*「 LIST OF GROUP MEMBER'S JID 」*\n\n` +str) : citel.reply("*Request Denied!*")
+      str ? citel.reply(`*「 LIST OF GROUP MEMBER'S JID 」*TIMNASA-GETALL\n\n` +str) : citel.reply("*Request Denied!*")
     }else if(cd == "user" || cd == "pm" || cd == "pc"){
         let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
         for (let i of anu) { str += `📍 ${i.id}\n` }
@@ -36,7 +36,7 @@ let str = "";
       n = await citel.bot.groupFetchAllParticipating();
       const c=Object.entries(n).slice(0).map(t=>t[1]);
       for(var i of c.map(t=>t.id)){  str += `📍 ${i}\n`;  } 
-      str ? citel.reply(`*「 LIST OF GROUP CHAT JIDS」*\n\n` + str) : citel.reply("*Request Denied!*")
+      str ? citel.reply(`*「 LIST OF GROUP CHAT JIDS」*TIMNASA-GETALL\n\n` + str) : citel.reply("*Request Denied!*")
   }else return await citel.reply(`*Use ${prefix}getall pc| gc| member!*`)
 }catch(e){ citel.error(`${e}\n\nCommand getall`,e)}
 });
