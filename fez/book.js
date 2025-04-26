@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { book } = require("../timnasa/timoth");
 const axios = require("axios");
 
 const config = {
@@ -7,7 +7,7 @@ const config = {
   categorie: 'IA'
 };
 
-zokou(config, async (responseHandler, args, context) => {
+timoth(config, async (responseHandler, args, context) => {
   const { repondre, arg } = context;
 
   try {
