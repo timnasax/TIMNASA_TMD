@@ -61,7 +61,7 @@ timoth({
             externalAdReply: {
                 title: "TIMNASA TMD",
                 body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 TIMNASA-TMD",
-                thumbnailUrl: "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
+                thumbnailUrl: "https://files.catbox.moe/o2zom2.jpg",
                 sourceUrl: "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
                 mediaType: 1,
                 renderLargerThumbnail: true
