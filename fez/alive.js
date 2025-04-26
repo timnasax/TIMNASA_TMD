@@ -1,4 +1,4 @@
-const { timnasa, timoth } = require('../timnasa/timoth');
+const { timoth } = require('../timnasa/timoth');
 const os = require("os");
 const { runtime } = require('../timnasa/functions');
 
