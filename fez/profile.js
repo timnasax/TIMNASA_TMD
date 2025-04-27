@@ -1,9 +1,9 @@
-const {zokou} = require("../framework/zokou");
+const {timoth} = require("../timnasa/timoth");
 const conf = require("../set")
 const {jidDecode}=require("@whiskeysockets/baileys")
 
 
-zokou( {
+timoth( {
   nomCom : "profile",
  categorie : "Fun",
    },
