@@ -1,8 +1,8 @@
-const { zokou } = require('../framework/zokou');
+const { timoth } = require('../timnasa/timoth');
 const s = require('../set')
 
 
-zokou(
+timoth(
     {
         nomCom : "setvar",
         categorie : "heroku"
@@ -11,7 +11,7 @@ zokou(
        const {ms,repondre,superUser , arg} = commandeOptions ;
        
        if(!superUser){repondre('Commande reserver au proprietaire du bot');return};
-       if(!arg[0] || !(arg.join('').split('='))) {repondre('Mauvais formats ; voici le mode d\'emploie.\nSetvar NOM_OWNER=Fredora');return};
+       if(!arg[0] || !(arg.join('').split('='))) {repondre('Mauvais formats ; voici le mode d\'emploie.\nSetvar NOM_OWNER=timnasa');return};
      
     const text = arg.join(" ")
      const Heroku = require("heroku-client");
@@ -30,7 +30,7 @@ zokou(
     }
 );
 
-zokou(
+timoth(
     {
         nomCom : "getallvar",
         categorie : "heroku"
@@ -60,7 +60,7 @@ str+= '🍁 *'+vr+'* '+'= '+h[vr]+'\n'
 );       
 
 
-    zokou(
+    timoth(
         {
             nomCom : "getvar",
             categorie : "heroku"
