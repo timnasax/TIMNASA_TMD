@@ -1,9 +1,9 @@
-const { zokou } = require('../framework/zokou');
+const { timoth } = require('../timnasa/timoth');
 const {ajouterUtilisateurAvecWarnCount , getWarnCountByJID , resetWarnCountByJID} = require('../bdd/warn')
 const s = require("../set")
 
 
-zokou(
+timoth(
     {
         nomCom : 'warn',
         categorie : 'Groupe'
