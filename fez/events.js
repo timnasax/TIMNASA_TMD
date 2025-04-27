@@ -1,5 +1,5 @@
 const { timoth } = require('../timnasa/timoth');
-const { attribuerUnevaleur } = require('../bdd/welcome');
+const { attribuerUnevaleur } = require('../timnasa/welcome');
 
 async function events(nomCom) {
     timoth({
