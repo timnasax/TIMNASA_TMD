@@ -1,8 +1,8 @@
-const {zokou} =require("../framework/zokou");
+const {timoth} =require("../timnasa/timoth");
 const axios =require("axios");
 
 
-zokou({ nomCom: "lyrics",
+timoth({ nomCom: "lyrics",
         reaction: "✨",
         categorie: "Recherche" }, async (dest, zk, commandeOptions) => {
     
@@ -18,7 +18,7 @@ zokou({ nomCom: "lyrics",
 
     if (lyrics.error) return repondre("Aucun résultat trouvé");
 
-    let msg = `---------ZK-lyrics-finder--------
+    let msg = `---------𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝙻𝚈𝚁𝙸𝙲𝚂-𝙵𝙸𝙽𝙳𝙴𝚁--------
 
 * *Artiste :* ${lyrics.artist}
 
