@@ -1,8 +1,8 @@
-const { zokou } = require('../framework/zokou');
+const { timoth } = require('../timnasa/timoth');
 const { attribuerUnevaleur } = require('../bdd/welcome');
 
 async function events(nomCom) {
-    zokou({
+    timoth({
         nomCom: nomCom,
         categorie: 'Groupe'
     }, async (dest, zk, commandeOptions) => {
