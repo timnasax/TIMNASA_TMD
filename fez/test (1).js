@@ -1,17 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { ezra } = require("../fredi/ezra");
+const { timoth } = require("../timnasa/timoth");
 const { conf } = require('../set')
-ezra(
-    { nomCom: "Dmlmd", reaction: "👊", nomFichier: __filename },
+timoth(
+    { nomCom: "alive", reaction: "👊", nomFichier: __filename },
     async (dest, zk, commandeOptions) => {
         console.log("Commande saisie !!!s");
         let z =
-            "Hello I'm *✧⁠DML_MD✧* \n\n " +
+            "Hello I'm *✧⁠𝚃𝙸𝙼𝙽𝙰𝚂𝙰_𝚃𝙽𝙳✧* \n\n " +
             "I'm a Whatsapp Bot Multi-Device";
-        let d = " Made By *Dml Sir*";
+        let d = " Made By *𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙼𝙳 𝚂𝚁*";
         let varmess = z + d;
-        var img = "https://files.catbox.moe/t37bpc.jpg";
+        var img = "https://files.catbox.moe/o2zom2.jpg";
         await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
         //console.log("montest")
     }
@@ -33,8 +33,8 @@ await  zok.sendMessage(origineMessage,  { image:{url:img},caption:varmess});
 }  */
 
 
-ezra(
-      { nomCom: "ownerloc", reaction: "😊"},
+timoth(
+      { nomCom: "owner", reaction: "😊"},
   async (dest,zk,commandOptions) => {
     const { ms } = commandOptions;
 const sentMsg1  = await zk.sendMessage(dest, { text: 'Oh! Hi There' })
@@ -52,7 +52,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:Fredie Sir\n' // full name
             + 'ORG:Ashoka Uni;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=255785591288:+255622220680\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=255784766591:+255756469954\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 const sentMsg5  = await zk.sendMessage(
     dest,
@@ -108,7 +108,7 @@ const sections = [
 	title: "Section 2",
 	rows: [
 	    {title: "Option 3", rowId: "option3"},
-	    {title: "Option 4", rowId: "option4", description: "This is a description Dml Md"}
+	    {title: "Option 4", rowId: "option4", description: "This is a description 𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙼𝙳"}
 	]
     },
 ]
