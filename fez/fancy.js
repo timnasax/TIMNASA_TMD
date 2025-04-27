@@ -1,5 +1,5 @@
 const { timoth } = require("../timnasa/timoth");
-const fancy = require("../commandes/style");
+const fancy = require("../timnasa/style");
 
 timoth({ nomCom: "fancy", categorie: "Fun", reaction: "☑️" }, async (dest, zk, commandeOptions) => {
     const { arg, repondre, prefixe } = commandeOptions;
