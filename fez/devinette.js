@@ -1,4 +1,4 @@
-const { zokou } = require('../framework/zokou');
+const { timoth } = require('../timnasa/timoth');
 
 // Définir une liste de devinettes avec les questions et les réponses
 const devinettes = [
@@ -96,7 +96,7 @@ const devinettes = [
   },
   ];
   
-zokou({ nomCom: "devinette", categorie: "Games" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "devinette", categorie: "Games" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre } = commandeOptions;
 
   // Choisir une devinette aléatoire
