@@ -1,6 +1,6 @@
-const { cmd } = require('../command');
+const { timoth } = require('../timnasa/timoth');
 
-cmd({
+timoth({
     pattern: "online",
     alias: ["whosonline", "onlinemembers"],
     desc: "Check who's online in the group (Admins & Owner only)",
