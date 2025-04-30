@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
 
-timoth({ nomCom: "ss", categorie: "General" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "ssc", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../timnasa//timoth");
     var coms = {};
@@ -37,7 +37,7 @@ const date = moment().format('DD/MM/YYYY');
       *TIMNASA_TMD IMPORTANT INFO* 
 ❒───────────────────❒
 *GITHUB LINK*
-> https://github.com/timnasax/TIMNASA_TMD
+> https://github.com/Next5x/TIMNASA_TMD1
 
 *WHATSAPP CHANNEL*
 > https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31
