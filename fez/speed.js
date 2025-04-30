@@ -14,7 +14,7 @@ const conf = require('../set');
 
 timoth(
   {
-    nomCom: 'ping',
+    nomCom: 'king',
     categorie: 'General',
     reaction: '🚴',
     alias: ['p']
@@ -26,14 +26,14 @@ timoth(
     } = commandOptions;
     const start = new Date().getTime();
     const msg = await zk.sendMessage(dest, {
-      text: '*always timnasa is ping time.✍︎*',
+      text: '*timnasa always  is king for time.✍︎*',
     }, {
       quoted: ms
     });
     const end = new Date().getTime();
     const ping = end - start;
     await zk.sendMessage(dest, {
-      text: `*ping🤯pong🚀timnasa.999999999..🤠*
+      text: `*king kongkom 🚀timnasa.999999999..🤠*
  *${ping} ms*`, edit: {
         id: msg.key.id, remoteJid: dest
       }});
@@ -46,7 +46,7 @@ timoth(
 
 timoth(
   {
-    nomCom: 'desc',
+    nomCom: 'dede',
     reaction: 'ℹ',
     alias: ['i']
   },
@@ -123,7 +123,7 @@ _CPU Core(s) Usage (${cpus.length} Core CPU)_
 
 timoth(
   {
-    nomCom: 'runtime',
+    nomCom: 'anttime',
     reaction: '🚨',
     alias: ['uptime']
   },
