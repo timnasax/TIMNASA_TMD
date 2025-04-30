@@ -1,9 +1,9 @@
-const {fana} = require('../timnasa/timoth');
+const {timoth} = require('../timnasa/timoth');
 const fs = require('fs');
 const getFBInfo = require("@xaviabot/fb-downloader");
 const { default: axios } = require('axios');
 
-fana({
+timoth({
   nomCom: "face",
   categorie: "Download",
   reaction: "🎬"
