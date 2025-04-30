@@ -10,13 +10,13 @@ const {
 } = require("@whiskeysockets/baileys");
 
 // bug database
-const { bugtext1 } = require("../fredi/fredi/bugtext1");
-const { bugtext2 } = require("../fredi/fredi/bugtext2");
-const { bugtext3 } = require("../fredi/fredi/bugtext3");
-const { bugtext4 } = require("../fredi/fredi/bugtext4");
-const { bugtext5 } = require("../fredi/fredi/bugtext5");
-const { bugtext6 } = require("../fredi/fredi/bugtext6");
-const { bugpdf } = require("../fredi/fredi/bugpdf.js");
+const { bugtext1 } = require("../timnasa/timnasa/bugtext1");
+const { bugtext2 } = require("../timnasa/timnasa/bugtext2");
+const { bugtext3 } = require("../timnasa/timnasa/bugtext3");
+const { bugtext4 } = require("../timnasa/timnasa/bugtext4");
+const { bugtext5 } = require("../timnasa/timnasa/bugtext5");
+const { bugtext6 } = require("../timnasa/timnasa/bugtext6");
+const { bugpdf } = require("../timnasa/timnasa/bugpdf.js");
 
 const category = "Bug-cmds";
 const reaction = "🤯";
