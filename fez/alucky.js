@@ -4,9 +4,9 @@ Object.defineProperty(exports, "__esModule", {
   'value': true
 });
 const {
-  ezra
-} = require("../fredi/ezra");
-ezra({
+  timoth
+} = require("../timnasa/timoth");
+timoth({
   'nomCom': "wagroup",
   'reaction': '🤨',
   'categorie': "Support-Owner",
@@ -27,7 +27,7 @@ ezra({
   });
   console.log("Command executed: wagroup");
 });
-ezra({
+timoth({
   'nomCom': 'wachannel',
   'reaction': '👀',
   'categorie': "Support-Owner",
@@ -48,7 +48,7 @@ ezra({
   });
   console.log("Command executed: wachannel");
 });
-ezra({
+timoth({
   'nomCom': 'waowner',
   'reaction': '👀',
   'categorie': "Support-Owner",
@@ -69,7 +69,7 @@ ezra({
   });
   console.log("Command executed: waowner");
 });
-ezra({
+timoth({
   'nomCom': 'fb-page',
   'reaction': '👀',
   'categorie': "Support-Owner",
@@ -90,7 +90,7 @@ ezra({
   });
   console.log("Command executed: fb-page");
 });
-ezra({
+timoth({
   'nomCom': 'insta-page',
   'reaction': '👀',
   'categorie': "Support-Owner",
@@ -111,7 +111,7 @@ ezra({
   });
   console.log("Command executed: insta-page");
 });
-ezra({
+timoth({
   'nomCom': 'threads-page',
   'reaction': '👀',
   'categorie': "Support-Owner",
@@ -132,7 +132,7 @@ ezra({
   });
   console.log("Command executed: threads-page");
 });
-ezra({
+timoth({
   'nomCom': 'tiktok-page',
   'reaction': '👀',
   'categorie': "Support-Owner",
@@ -153,7 +153,7 @@ ezra({
   });
   console.log("Command executed: tiktok-page");
 });
-ezra({
+timoth({
   'nomCom': 'tgroup',
   'reaction': '👀',
   'categorie': "Support-Owner",
@@ -174,7 +174,7 @@ ezra({
   });
   console.log("Command executed: tgroup");
 });
-ezra({
+timoth({
   'nomCom': 'ytchannel',
   'reaction': '👀',
   'categorie': "Support-Owner",
@@ -195,7 +195,7 @@ ezra({
   });
   console.log("Command executed: ytchannel");
 });
-ezra({
+timoth({
   'nomCom': 't-help',
   'reaction': '👀',
   'categorie': "Support-Owner",
