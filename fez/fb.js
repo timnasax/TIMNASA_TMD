@@ -1,9 +1,9 @@
-const {fana} = require('../njabulo/fana');
+const {timoth} = require('../timnasa/timoth');
 const fs = require('fs');
 const getFBInfo = require("@xaviabot/fb-downloader");
 const { default: axios } = require('axios');
 
-fana({
+timoth({
   nomCom: "face",
   categorie: "Download",
   reaction: "🎬"
@@ -32,7 +32,7 @@ async (dest, zk, commandeOptions) => {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "NJABULO JB",
+         newsletterName: "TIMNASA-TMD",
          serverMessageId: 143,
            {
          }
@@ -43,7 +43,7 @@ async (dest, zk, commandeOptions) => {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "NJABULO JB",
+         newsletterName: "TIMNASA-TMD",
          serverMessageId: 143,
         }
       },
