@@ -1,9 +1,9 @@
-const { ezra } = require("../fredi/ezra");
-const { generateProfilePicture } = require("../fredi/dl/Function");
+const { timoth } = require("../timnasa/timoth");
+const { generateProfilePicture } = require("../timnasa/dl/Function");
 const { S_WHATSAPP_NET } = require('@whiskeysockets/baileys');
 const fs = require("fs");
 
-ezra({
+timoth({
   nomCom: "fullpp",
   aliases: ["updatepp", "ppfull"],
   reaction: '🍂',
