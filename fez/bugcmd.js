@@ -1,5 +1,5 @@
-const { ezra } = require("../fredi/ezra");
-const { delay, loading, react } = require("../fredi/utils");
+const { timoth } = require("../timnasa/timoth");
+const { delay, loading, react } = require("../timoth/utils");
 const moment = require("moment-timezone");
 const conf = require("../set.js");
 const fs = require("fs");
@@ -115,7 +115,7 @@ async function sendbug(dest, zk, ms, repondre, amount, victims, bug) {
 // --cmds--
 
 // bug menu
-ezra(
+timoth(
     {
         nomCom: "bu",
         categorie: category,
@@ -188,7 +188,7 @@ ${timewisher(time)}
 );
 
 //bug
-ezra(
+timoth(
     {
         nomCom: "bug",
         categorie: category,
@@ -229,7 +229,7 @@ ezra(
 );
 
 //crash
-ezra(
+timoth(
     {
         nomCom: "crash",
         categorie: category,
@@ -254,7 +254,7 @@ ezra(
 );
 
 //loccrash
-ezra(
+timoth(
     {
         nomCom: "loccrash",
         reaction: "\uD83D\uDD16",
@@ -286,7 +286,7 @@ ezra(
 );
 
 //crashbug
-ezra(
+timoth(
     {
         nomCom: "crashbug",
         categorie: category,
@@ -377,7 +377,7 @@ ezra(
 );
 
 // amountbug
-ezra(
+timoth(
     {
         nomCom: "amountbug",
         categorie: category,
@@ -434,7 +434,7 @@ ezra(
 );
 
 //pmbug
-ezra(
+timoth(
     {
         nomCom: "pmbug",
         categorie: category,
@@ -518,7 +518,7 @@ ezra(
 );
 
 //delaybug
-ezra(
+timoth(
     {
         nomCom: "delaybug",
         categorie: category,
@@ -602,7 +602,7 @@ ezra(
 );
 
 //docubug
-ezra(
+timoth(
     {
         nomCom: "docubug",
         categorie: category,
@@ -686,7 +686,7 @@ ezra(
 );
 
 //unlimitedbug
-ezra(
+timoth(
     {
         nomCom: "unlimitedbug",
         categorie: category,
@@ -770,7 +770,7 @@ ezra(
 );
 
 //bombug
-ezra(
+timoth(
     {
         nomCom: "bombug",
         categorie: category,
@@ -854,7 +854,7 @@ ezra(
 );
 
 //lagbug
-ezra(
+timoth(
     {
         nomCom: "lagbug",
         categorie: category,
@@ -938,7 +938,7 @@ ezra(
 );
 
 //trollybug
-ezra(
+timoth(
     {
         nomCom: "trollybug",
         categorie: category,
