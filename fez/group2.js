@@ -1,8 +1,9 @@
-const{ timoth} = require("../timnasa/timoth");
+const config = require("../config");
 const {
-  timoth
-} = require("../timnasa/timoth");
-timoth({
+  cmd,
+  commands
+} = require("../command");
+cmd({
   'pattern': "opentime",
   'react': '🔖',
   'desc': "To open group to a time",
@@ -75,7 +76,7 @@ timoth({
     _0x25c44a(_0x36d0c6);
   }
 });
-timoth({
+cmd({
   'pattern': "closetime",
   'react': '🔖',
   'desc': "To close group to a time",
@@ -148,7 +149,7 @@ timoth({
     _0xbe8dbc(_0x4094cc);
   }
 });
-timoth({
+cmd({
   'pattern': 'tagadmin',
   'alais': ["tagadmins"],
   'react': '🙀',
@@ -206,7 +207,7 @@ timoth({
     _0x35f506("you are not an admin.");
   }
 });
-timoth({
+cmd({
   'pattern': "mute",
   'alias': ["lock"],
   'react': '🔒',
@@ -251,7 +252,7 @@ timoth({
     }
     await _0x188ee4.groupSettingUpdate(_0x5a0744.chat, "announcement");
     const _0x23264b = await _0x188ee4.sendMessage(_0x5a0744.chat, {
-      'text': "*GROUP CHAT MUTED BY TIMNASA-TMD1* 🔒"
+      'text': "*GROUP CHAT MUTED BY STANY TXR ZMD* 🔒"
     }, {
       'quoted': _0x2926d7
     });
@@ -266,7 +267,7 @@ timoth({
     _0x4efac7("*Muja Admin Kar Pher Use Kar Commands ❗👻*");
   }
 });
-timoth({
+cmd({
   'pattern': "unmute",
   'alias': ["unlock"],
   'react': '🔓',
@@ -311,7 +312,7 @@ timoth({
     }
     await _0x298fe1.groupSettingUpdate(_0x2602ac.chat, "not_announcement");
     const _0x74b371 = await _0x298fe1.sendMessage(_0x2602ac.chat, {
-      'text': "*GROUP CHAT UNMUTED BY TIMNASA-TMD1* 🔒"
+      'text': "*GROUP CHAT UNMUTED BY STANY TXR ZMD* 🔒"
     }, {
       'quoted': _0x116d41
     });
@@ -326,7 +327,7 @@ timoth({
     _0x33fff7("*Muja Admin Bana Phr Commands Kar❗👻*");
   }
 });
-timoth({
+cmd({
   'pattern': 'add',
   'alias': ["aja"],
   'react': '➕',
@@ -376,7 +377,7 @@ timoth({
     _0x227b1d("An error occurred while adding the user. Please make sure the number is correct and they are not already in the group.");
   }
 });
-timoth({
+cmd({
   'pattern': "setgoodbye",
   'desc': "Set the goodbye message for the group.",
   'category': "group",
@@ -431,7 +432,7 @@ timoth({
     _0x4beca6('' + _0xbbddb1);
   }
 });
-timoth({
+cmd({
   'pattern': "setwelcome",
   'desc': "Set the welcome message for the group.",
   'category': "group",
