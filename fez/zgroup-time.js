@@ -1,5 +1,5 @@
 const { timoth } = require("../timnasa/timoth");
-// const { getGroupe } = require("../bdd/groupe"); 
+const { getGroupe } = require("../timnasa/groupe"); 
 const conf = require("../set");
 
 timoth({
