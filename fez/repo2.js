@@ -1,6 +1,6 @@
 const axios = require("axios");
-const { ezra } = require(__dirname + "/../fredi/ezra");
-const { format } = require(__dirname + "/../fredi/mesfonctions");
+const { timoth } = require(__dirname + "/../timnasa/timoth");
+const { format } = require(__dirname + "/../timnasa/mesfonctions");
 const os = require('os');
 const moment = require("moment-timezone");
 const conf = require(__dirname + "/../set");
@@ -25,7 +25,7 @@ const formatUptime = (seconds) => {
 // Fetch GitHub stats and multiply by 10
 const fetchGitHubStats = async () => {
     try {
-        const response = await axios.get("https://api.github.com/repos/Fred1e/LUCKY_MD");
+        const response = await axios.get("https://api.github.com/repos/Next5x/TIMNASA_TMD1");
         const forksCount = response.data.forks_count * 11; 
         const starsCount = response.data.stargazers_count * 11; 
         const totalUsers = forksCount + starsCount; 
@@ -36,7 +36,7 @@ const fetchGitHubStats = async () => {
     }
 };
 
-ezra({
+timoth({
     nomCom: "repo",
     aliases: ["script", "cs"],
     reaction: '🍼',
@@ -45,7 +45,7 @@ ezra({
     const { repondre, auteurMessage, nomAuteurMessage } = context;
 
     try {
-        const response = await axios.get("https://api.github.com/repos/Fred1e/LUCKY_MD");
+        const response = await axios.get("https://api.github.com/repos/Next5x/TIMNASA_TMD1");
         const repoData = response.data;
 
         if (repoData) {
