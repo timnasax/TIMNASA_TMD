@@ -1,4 +1,4 @@
-const { fana } = require("../njabulo/fana");
+const { timoth } = require("../timnasa/timoth");
 const speed = require("performance-now");
 
 // Function for delay simulation
@@ -17,9 +17,9 @@ function getName(dest, commandeOptions) {
 }
 
 // Command: Ping
-fana(
+timoth(
   {
-    nomCom: 'bot',
+    nomCom: 'tot',
     desc: 'To check bot response time',
     Categorie: 'General',
     reaction: '⚡',
@@ -75,9 +75,9 @@ fana(
 );
 
 // Command: Uptime
-fana(
+timoth(
   {
-    nomCom: 'uptime',
+    nomCom: 'utime',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '💝',
