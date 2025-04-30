@@ -1,4 +1,4 @@
-const { fana } = require("../njabulo/fana");
+const { timoth } = require("../timnasa/timoth");
 const speed = require("performance-now");
 
 // Function for delay simulation
@@ -17,9 +17,9 @@ function getName(dest, commandeOptions) {
 }
 
 // Command: Ping
-fana(
+timoth(
   {
-    nomCom: 'bot',
+    nomCom: 'tot',
     desc: 'To check bot response time',
     Categorie: 'General',
     reaction: '⚡',
@@ -27,8 +27,8 @@ fana(
   },
   async (dest, zk, commandeOptions) => {
     const name = getName(dest, commandeOptions);
-    const img = 'https://files.catbox.moe/jcylyv.jpg';
-    const murl = 'https://whatsapp.com/channel/0029Vb2eknR59PwL1OK4wR24';
+    const img = 'https://files.catbox.moe/9w17os.jpg';
+    const murl = 'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31';
 
     // Generate 3 ping results with random numbers
     const pingResults = Array.from({ length: 3 }, () => Math.floor(Math.random() * 10000 + 1000));
@@ -75,7 +75,7 @@ fana(
 );
 
 // Command: Uptime
-fana(
+timoth(
   {
     nomCom: 'uptime',
     desc: 'To check runtime',
@@ -87,8 +87,8 @@ fana(
     const name = getName(dest, commandeOptions);
     const runtime = process.uptime();
     const formattedRuntime = new Date(runtime * 1000).toISOString().substr(11, 8);
-    const img = 'https://files.catbox.moe/i89539.jpg';
-    const murl = 'https://whatsapp.com/channel/0029Vb2eknR59PwL1OK4wR24';
+    const img = 'https://files.catbox.moe/9w17os.jpg';
+    const murl = 'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31';
 
     // Constructing the contact message
     const con = {
