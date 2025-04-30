@@ -1,8 +1,8 @@
-const { ezra } = require("../fredi/ezra");
+const { timoth } = require("../timnasa/timoth");
 // const { getGroupe } = require("../bdd/groupe"); 
 const conf = require("../set");
 
-ezra({
+timoth({
     nomCom: "opentime",
     reaction: "😌",
     categorie: "group"
@@ -43,7 +43,7 @@ ezra({
     }
 });
 
-ezra({
+timoth({
     nomCom: "closetime",
     reaction: "😌",
     categorie: "group"
