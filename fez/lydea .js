@@ -1,8 +1,8 @@
-const { zokou } = require('../framework/zokou');
+const { timoth } = require('../timnasa/timoth');
 
 const isIdeaCommandEnabled = true; // Variable pour activer ou désactiver la commande "idea"
 
-zokou({ nomCom: "idea", categorie: "IA", reaction:"🧜", active: isIdeaCommandEnabled }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "neema", categorie: "IA", reaction:"🧜", active: isIdeaCommandEnabled }, async (dest, zk, commandeOptions) => {
   const { ms, arg, repondre } = commandeOptions;
   const message = arg.join(' ');
 
