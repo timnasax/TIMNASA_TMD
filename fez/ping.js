@@ -17,7 +17,7 @@ timoth(
     // Send image with initial caption
     const imageMessage = await zk.sendMessage(dest, {
       image: { url: 'https://files.catbox.moe/9w17os.jpg' },
-      caption: `*⏱POWER BY TIMNASA-TMD TEAM...*`
+      caption: `*POWER BY TIMNASA-TMD TEAM...*`
     }, { quoted: ms });
 
     const end = performance.now();
@@ -25,7 +25,7 @@ timoth(
 
     // Edit the previous image caption to show ping result
     await zk.sendMessage(dest, {
-      text: `*Timnasa tmd*\n⚡ *Ping:* ${ping} ms`,
+      text: `*Timnasatmd*\n⚡ *Ping:* ${ping} ms`,
       edit: {
         id: imageMessage.key.id,
         remoteJid: dest
