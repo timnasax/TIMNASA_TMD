@@ -16,8 +16,8 @@ timoth(
 
     // Send image with initial caption
     const imageMessage = await zk.sendMessage(dest, {
-      image: { url: 'https://files.catbox.moe/yvpwsn.jpeg' },
-      caption: `*⏱POWERED BY BONIPHACE TEAM...*`
+      image: { url: 'https://files.catbox.moe/9w17os.jpg' },
+      caption: `*⏱POWER BY TIMNASA-TMD TEAM...*`
     }, { quoted: ms });
 
     const end = performance.now();
@@ -25,7 +25,7 @@ timoth(
 
     // Edit the previous image caption to show ping result
     await zk.sendMessage(dest, {
-      text: `*Boniphace*\n⚡ *Ping:* ${ping} ms`,
+      text: `*Timnasa tmd*\n⚡ *Ping:* ${ping} ms`,
       edit: {
         id: imageMessage.key.id,
         remoteJid: dest
@@ -34,7 +34,7 @@ timoth(
 
     // Send background music
     await zk.sendMessage(dest, {
-      audio: { url: 'https://files.catbox.moe/k6yjqw.mp3' },
+      audio: { url: 'https://files.catbox.moe/9w17os.jpg' },
       mimetype: 'audio/mpeg',
       ptt: false // set to true if you want it as a voice note
     }, { quoted: ms });
@@ -61,7 +61,7 @@ timoth(
       ms, arg, repondre
     } = commandOptions;
     // data
-    const tumbUrl = 'https://i.ibb.co/wyYKzMY/68747470733a2f2f74656c656772612e70682f66696c652f6530376133643933336662346361643062333739312e6a7067.jpg';
+    const tumbUrl = 'https://files.catbox.moe/9w17os.jpg';
     const used = process.memoryUsage();
     const cpus = os.cpus().map(cpu => {
       cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0);
