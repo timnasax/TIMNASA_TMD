@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206);
 const readmore = more.repeat(4001);
 
-timoth({ nomCom: "xmenu", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "menuc", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre, prefixe, nomAuteurMessage, mybotpic } = commandeOptions;
     let { cm } = require(__dirname + "/../timnasa/timoth");
     let coms = {};
