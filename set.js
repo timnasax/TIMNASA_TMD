@@ -17,6 +17,7 @@ module.exports = { session: process.env.SESSION_ID || 'timoth',
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'non',
     AUTO_REACT: process.env.AUTO_REACTION || "non",  
     URL: process.env.URL || "https://files.catbox.moe/snh8mc.jpeg",  
+    URL2: process.env.URL2 || "https://files.catbox.moe/snh8mc.jpeg",
     AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS || 'non',              
     CHATBOT: process.env.CHAT_BOT || "off",              
     AUTO_READ_MESSAGES: process.env.AUTO_READ_MESSAGES || "yes",
@@ -67,4 +68,3 @@ fs.watchFile(fichier, () => {
     delete require.cache[fichier];
     require(fichier);
 });
-
