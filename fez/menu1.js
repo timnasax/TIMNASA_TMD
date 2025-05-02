@@ -24,6 +24,8 @@ timoth({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) 
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
+const img = 'https://files.catbox.moe/5x1y2z.png';
+const imgs = 'https://files.catbox.moe/5x1y2z.png';
   let infoMsg =  `
 ╭▱▰「 *${s.BOT}* 」▱▰❂
 ┃⊛╭▰▱▰▱▰▱▰▱➻
@@ -55,27 +57,30 @@ const date = moment().format('DD/MM/YYYY');
     menuMsg += `
 > Made By timnasa\n
 `;
-   var lien = mybotpic();
-   if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Luckymd*, déveloper Fredie Tech" , gifPlayback : true }, { quoted: ms });
-    }
-    catch (e) {
-       console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Luckymd*, déveloper Fredie Tech" }, { quoted: ms });
-    }
-    catch (e) {
+   try {
+        await zk.sendMessage(dest, { 
+            image: { url: img },
+            caption: infoMsg + menuMsg,
+            contextInfo: {
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: "120363313124070136@newsletter",
+                    newsletterName: "@FrediEzra",
+                    serverMessageId: -1
+                },
+                forwardingScore: 999,
+                externalAdReply: {
+                    title: "☢️LUCKY MD X-FORCE☢️",
+                    body: "🧃Command List",
+                    thumbnailUrl: imgs,
+                    sourceUrl: "https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f",
+                    mediaType: 1,
+                    renderLargerThumbnail: true
+                }
+            }
+        });
+    } catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
         repondre("🥵🥵 Menu erreur " + e);
     }
-} 
-else {
-    repondre(infoMsg + menuMsg);
-}
 });
