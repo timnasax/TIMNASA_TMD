@@ -88,13 +88,13 @@ timoth({ nomCom: "url2", categorie: "General", reaction: "👨🏿‍💻" }, as
         // Respond with the URL based on media type
         switch (mediaType) {
             case 'image':
-                repondre(`Boniphace url: ${catboxUrl}`);
+                repondre(`𝚻𝚰𝚳𝚴𝚫𝐒𝚫-𝚻𝚳𝐃 url: ${catboxUrl}`);
                 break;
             case 'video':
-                repondre(`Boniphace url: ${catboxUrl}`);
+                repondre(`𝚻𝚰𝚳𝚴𝚫𝐒𝚫-𝚻𝚳𝐃 url: ${catboxUrl}`);
                 break;
             case 'audio':
-                repondre(`Boniphace url: ${catboxUrl}`);
+                repondre(`𝚻𝚰𝚳𝚴𝚫𝐒𝚫-𝚻𝚳𝐃 url: ${catboxUrl}`);
                 break;
             default:
                 repondre('An unknown error occurred.');
