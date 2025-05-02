@@ -1,10 +1,10 @@
 const {
-  zokou
-} = require("./../framework/zokou");
+  timoth
+} = require("./../timnasa/timoth");
 const {
   format,
   runtime
-} = require('../framework/mesfonctions');
+} = require('../timnasa/mesfonctions');
 const os = require('os');
 const speed = require('performance-now');
 const {
@@ -12,7 +12,7 @@ const {
 } = require('perf_hooks');
 const conf = require('../set');
 
-zokou(
+timoth(
   {
     nomCom: 'ping',
     categorie: 'General',
@@ -26,14 +26,14 @@ zokou(
     } = commandOptions;
     const start = new Date().getTime();
     const msg = await zk.sendMessage(dest, {
-      text: '*𝐚𝐥𝐰𝐚𝐲𝐬 𝐪𝐚𝐫𝐭.✍︎*',
+      text: '*pong.✍︎*',
     }, {
       quoted: ms
     });
     const end = new Date().getTime();
     const ping = end - start;
     await zk.sendMessage(dest, {
-      text: `*𝚁𝙰𝙷𝙼𝙰𝙽𝙸+𝙼𝙳+𝚂𝙿𝙴𝙴𝙳+𝙸𝚂-𝟿𝟿𝟿𝟿..🤠*
+      text: `*timnasa ping speed.9999999..🤠*
  *${ping} ms*`, edit: {
         id: msg.key.id, remoteJid: dest
       }});
@@ -44,12 +44,13 @@ zokou(
   }
 )
 
-zokou(
+  timoth(
   {
     nomCom: 'desc',
     reaction: 'ℹ',
     alias: ['i']
   },
+
 
   async (dest, zk, commandOptions) => {
     const {
@@ -121,7 +122,7 @@ _CPU Core(s) Usage (${cpus.length} Core CPU)_
   }
 );
 
-zokou(
+timoth(
   {
     nomCom: 'runtime',
     reaction: '🚨',
