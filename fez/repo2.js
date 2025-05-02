@@ -58,6 +58,9 @@ timoth({
             };
 
             const releaseDate = new Date(repoData.created_at).toLocaleDateString('en-GB');
+            const img = 'https://files.catbox.moe/5x1y2z.png';
+            const imgs = 'https://files.catbox.moe/5x1y2z.png';
+
             const message = `
             *Hello 👋 my friend ${nomAuteurMessage}*
 
@@ -71,20 +74,28 @@ timoth({
      ┣⁠✞  *Owner:*   *${conf.OWNER_NAME}*
      ╰┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┈`;
 
-            await reply.sendMessage(command, {
-                text: message,
-                contextInfo: {
-                    mentionedJid: [auteurMessage],
-                    externalAdReply: {
-                        title: conf.BOT,
-                        body: conf.OWNER_NAME,
-                        thumbnailUrl: conf.URL,
-                        sourceUrl: conf.GURL, // Fixed typo from 'cof.GURL' to 'conf.GURL'
-                        mediaType: 1,
-                        renderLargerThumbnail: true
-                    }
+try {
+        await zk.sendMessage(dest, { 
+            image: { url: img },
+            caption: infoMsg + menuMsg,
+            contextInfo: {
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: "120363313124070136@newsletter",
+                    newsletterName: "@FrediEzra",
+                    serverMessageId: -1
+                },
+                forwardingScore: 999,
+                externalAdReply: {
+                    title: "☢️ TIMNASA-TMD☢️",
+                    body: "🧃Command List",
+                    thumbnailUrl: imgs,
+                    sourceUrl: "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
+                    mediaType: 1,
+                    renderLargerThumbnail: true
                 }
-            });
+            }
+        });
         } else {
             console.log("Could not fetch data");
             repondre("An error occurred while fetching the repository data.");
