@@ -58,9 +58,6 @@ timoth({
             };
 
             const releaseDate = new Date(repoData.created_at).toLocaleDateString('en-GB');
-            const img = 'https://files.catbox.moe/5x1y2z.png';
-            const imgs = 'https://files.catbox.moe/5x1y2z.png';
-
             const message = `
             *Hello 👋 my friend ${nomAuteurMessage}*
 
@@ -74,22 +71,22 @@ timoth({
      ┣⁠✞  *Owner:*   *${conf.OWNER_NAME}*
      ╰┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┈`;
 
-try {
+            try {
         await zk.sendMessage(dest, { 
-            image: { url: img },
+            image: { url: conf.URL },
             caption: infoMsg + menuMsg,
             contextInfo: {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: "120363313124070136@newsletter",
-                    newsletterName: "@FrediEzra",
+                    newsletterName: "@timnasa/timoth",
                     serverMessageId: -1
                 },
                 forwardingScore: 999,
                 externalAdReply: {
-                    title: "☢️ TIMNASA-TMD☢️",
+                    title: "☢️𝚻𝚰𝚳𝚴𝚫𝐒𝚫-𝚻𝚳𝐃☢️",
                     body: "🧃Command List",
-                    thumbnailUrl: imgs,
+                    thumbnailUrl: conf.URL2,
                     sourceUrl: "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
                     mediaType: 1,
                     renderLargerThumbnail: true
