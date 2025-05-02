@@ -55,7 +55,7 @@
     },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
-      "value": "⁠TIMNASA-TMD",
+      "value": "⁠TIMNASA-TMD1",
       "required": false 
     },
     "PUBLIC_MODE": {
@@ -65,7 +65,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Insert your Heroku API key (required)",
-      "value": "",
+      "value": "TIMNASA-TMD1",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -84,6 +84,11 @@
       "required": false
     },
     "URL": {
+      "description": "you must add your bot image url.Get your image url now and fill it here",
+      "value": "https://files.catbox.moe/snh8mc.jpeg",
+      "required": true
+    },
+    "URL2": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
       "value": "https://files.catbox.moe/snh8mc.jpeg",
       "required": true
