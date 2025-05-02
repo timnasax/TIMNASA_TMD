@@ -24,8 +24,8 @@ timoth({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) 
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
-const img = 'https://files.catbox.moe/5x1y2z.png';
-const imgs = 'https://files.catbox.moe/5x1y2z.png';
+const img = 'https://files.catbox.moe/9w17os.jpg';
+const imgs = 'https://files.catbox.moe/9w17os.jpg';
   let infoMsg =  `
 ╭▱▰「 *${s.BOT}* 」▱▰❂
 ┃⊛╭▰▱▰▱▰▱▰▱➻
@@ -65,15 +65,15 @@ const imgs = 'https://files.catbox.moe/5x1y2z.png';
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: "120363313124070136@newsletter",
-                    newsletterName: "@FrediEzra",
+                    newsletterName: "@timnasa",
                     serverMessageId: -1
                 },
                 forwardingScore: 999,
                 externalAdReply: {
-                    title: "☢️LUCKY MD X-FORCE☢️",
+                    title: "☢️𝚻𝚰𝚳𝚴𝚫𝐒𝚫-𝚻𝚳𝐃☢️",
                     body: "🧃Command List",
                     thumbnailUrl: imgs,
-                    sourceUrl: "https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f",
+                    sourceUrl: "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
                     mediaType: 1,
                     renderLargerThumbnail: true
                 }
