@@ -114,8 +114,8 @@ _CPU Core(s) Usage (${cpus.length} Core CPU)_
           showAdAttribution: true,
           title: `${conf.BOT}`,
           body: `${latensi.toFixed(4)} Second`,
-          thumbnailUrl: `${tumbUrl}`,
-          sourceUrl: global.link,
+          thumbnailUrl: `${tumbUrl}`,"https://files.catbox.moe/9w17os.jpg"
+          sourceUrl: global.link,"https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31"
           mediaType: 1,
           renderLargerAbhinail: true
         }
@@ -145,8 +145,8 @@ timoth(
           showAdAttribution: true,
           title: `${conf.BOT}`,
           body: `「 RUNTIME 」`,
-          thumbnailUrl: tumbUrl,
-          sourceUrl: global.link,
+          thumbnailUrl: tumbUrl,"https://files.catbox.moe/9w17os.jpg"
+          sourceUrl: global.link,"https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31"
           mediaType: 1,
           renderLargerAbhinail: true
         }
