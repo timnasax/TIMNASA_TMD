@@ -25,7 +25,7 @@ timoth({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) 
 const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 const img = 'https://files.catbox.moe/9w17os.jpg';
-const imgs = 'https://files.catbox.moe/9w17os.jpg';
+const imgs = 'https://files.catbox.moe/h2ujt6.jpg';
   let infoMsg =  `
 ╭▱▰「 *${s.BOT}* 」▱▰❂
 ┃⊛╭▰▱▰▱▰▱▰▱➻
