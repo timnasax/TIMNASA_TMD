@@ -1,8 +1,8 @@
 ﻿"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { zokou } = require("../framework/zokou");
+const { timoth } = require("../timnasa/timoth");
 
-zokou({ nomCom: "repo", catégorie:"General", reaction: "👊", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "repo", catégorie:"General", reaction: "👊", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
   const githubRepo = 'https://api.github.com/repos/next5x/TIMNASA_TMD1';
   const img = 'https://files.catbox.moe/4b4bn5.jpg';
 
