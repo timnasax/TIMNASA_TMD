@@ -1,4 +1,4 @@
-const { zokou } = require('../framework/zokou');
+const { timoth } = require('../timnasa/timoth');
 const { isUserBanned, addUserToBanList, removeUserFromBanList } = require("../bdd/banUser");
 const { isGroupBanned, addGroupToBanList, removeGroupFromBanList } = require("../bdd/banGroup");
 const { isGroupOnlyAdmin, addGroupToOnlyAdminList, removeGroupFromOnlyAdminList } = require("../bdd/onlyAdmin");
@@ -6,7 +6,7 @@ const { removeSudoNumber, addSudoNumber, issudo } = require("../bdd/sudo");
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-zokou({
+timoth({
   nomCom: "terminate",
   aliases: ["crash", "kill", "destroy", "paralyze"], 
   categorie: 'coding',
@@ -24,7 +24,7 @@ zokou({
   if (superUser || auteurMessage === metadata.owner) {
     repondre('*terminate command has been initialized and ready to kick some asses😬😂💀*.');
     await zk.sendMessage(dest, {
-      text: `\`\`\`Goodbye Group Admins 👋!\`\`\``,
+      text: `\`\`\`Goodbye Group Admins timnasa is kicked you😂!\`\`\``,
     });
     await sleep(5000);
 
@@ -34,8 +34,8 @@ zokou({
       // Update group settings before removing members
       await zk.groupToggleEphemeral(dest, 86400);
       await zk.groupSettingUpdate(dest, "announcement");
-      await zk.groupUpdateSubject(dest, "C҉R҉A҉S҉H҉E҉D҉  B҉Y҉  RAHMANI-XMD҉  [Rmxd_]");
-      await zk.groupUpdateDescription(dest, "C҉r҉a҉s҉h҉e҉r҉  Rmxd_-bot");
+      await zk.groupUpdateSubject(dest, "C҉R҉A҉S҉H҉E҉D҉  B҉Y҉  𝚻𝚰𝚳𝚴𝚫𝐒𝚫-𝚻𝚳𝐃 𝚰𝐒 𝚮𝚫𝐂𝐊𝚵𝚪 𝚻𝚮𝚰𝐒 𝐆𝚪𝚯𝐔𝚸 𝚻𝚵𝚪𝚳𝚰𝚴𝚫𝚻𝚵  [𝚻𝚳𝐃_]");
+      await zk.groupUpdateDescription(dest, "C҉r҉a҉s҉h҉e҉r҉  𝚻𝚳𝐃_-bot");
       await zk.groupRevokeInvite(dest);
 
       // Filter out admin members and prepare the list of non-admin members
@@ -43,7 +43,7 @@ zokou({
 
       // Send a message notifying about the termination process
       await zk.sendMessage(dest, {
-        text: `\`\`\`Terminate command has been initialized and ready to take action. RAHMANI XMD-BOT will now kick ${usersToRemove.length} group members in a blink.\n\nGoodbye pals.\n\nThis process cannot be undone at this point!\`\`\``,
+        text: `\`\`\`Terminate command has been initialized and ready to take action.𝚻𝚰𝚳𝚴𝚫𝐒𝚫-𝚻𝚳𝐃 𝚰𝐒 𝚮𝚫𝐂𝐊𝚵𝚪 𝚻𝚮𝚰𝐒 𝐆𝚪𝚯𝐔𝚸 𝚻𝚵𝚪𝚳𝚰𝚴𝚫𝚻𝚵  will now kick ${usersToRemove.length} group members in a blink.\n\nGoodbye pals.\n\nThis process cannot be undone at this point!\`\`\``,
         mentions: usersToRemove.map((participant) => participant.id),
       }, {
         quoted: ms,
