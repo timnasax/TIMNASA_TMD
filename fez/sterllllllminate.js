@@ -1,8 +1,8 @@
 const { timoth } = require('../timnasa/timoth');
-const { isUserBanned, addUserToBanList, removeUserFromBanList } = require("../bdd/banUser");
-const { isGroupBanned, addGroupToBanList, removeGroupFromBanList } = require("../bdd/banGroup");
-const { isGroupOnlyAdmin, addGroupToOnlyAdminList, removeGroupFromOnlyAdminList } = require("../bdd/onlyAdmin");
-const { removeSudoNumber, addSudoNumber, issudo } = require("../bdd/sudo");
+const { isUserBanned, addUserToBanList, removeUserFromBanList } = require("../timnasa/banUser");
+const { isGroupBanned, addGroupToBanList, removeGroupFromBanList } = require("../timnasa/banGroup");
+const { isGroupOnlyAdmin, addGroupToOnlyAdminList, removeGroupFromOnlyAdminList } = require("../timnasa/onlyAdmin");
+const { removeSudoNumber, addSudoNumber, issudo } = require("../timnasa/sudo");
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
