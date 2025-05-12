@@ -7,7 +7,7 @@
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://files.catbox.moe/snh8mc.jpeg",
+  "logo": "https://files.catbox.moe/r4djgj.png",
   "repository": "https://github.com/timnasax/TIMNASA_TMD",
   "succes_url": "/",
   "stack": "container",
@@ -85,12 +85,12 @@
     },
     "URL": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "https://files.catbox.moe/snh8mc.jpeg",
+      "value": "https://files.catbox.moe/r4djgj.png",
       "required": true
     },
     "URL2": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "https://files.catbox.moe/snh8mc.jpeg",
+      "value": "https://files.catbox.moe/r4djgj.png",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
