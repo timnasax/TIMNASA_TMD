@@ -18,6 +18,7 @@ timoth({
   const _0x5a815c = Array.from({
     'length': 0x3
   }, () => Math.floor(Math.random() * 10000 + 1000));
+  const randomAudio = "https://files.catbox.moe/sqrx9g.mp3"; // Voice note URL
   const _0x451c3b = _0x5a815c.map(_0x526b71 => "🟢 PONG: " + _0x526b71 + " 🟢").join("\n");
   const _0x41d2b1 = {
     'externalAdReply': {
