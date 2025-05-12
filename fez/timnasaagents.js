@@ -4,7 +4,7 @@ const {
 const {
   getAllSudoNumbers,
   isSudoTableNotEmpty
-} = require("../luckydatabase/sudo");
+} = require("../timnasa/sudo");
 const conf = require("../set");
 timoth({
   'nomCom': "agents",
