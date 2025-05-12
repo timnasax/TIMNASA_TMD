@@ -3,12 +3,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { timoth } = require("../timnasa/timoth");
 
 timoth(
-  { nomCom: "palive", reaction: "🌟", nomFichier: __filename },
+  { nomCom: "alive", reaction: "🌟", nomFichier: __filename },
   async (dest, zk, commandeOptions) => {
     console.log("Alive command triggered!");
 
     // URLs and configurations
-    const fullImageUrl = "https://files.catbox.moe/bq7ym6.jpg"; // Full image URL
+    const fullImageUrl = "https://files.catbox.moe/4b4bn5.jpg"; // Full image URL
     const smallThumbnailUrl = "https://files.catbox.moe/bq7ym6.jpg"; // Small thumbnail URL
     const randomAudio = "https://files.catbox.moe/wdap4t.mp3"; // Voice note URL
     const sourceUrl = "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31"; // Channel link
@@ -24,7 +24,7 @@ timoth(
         ptt: true, // Send as a voice note
         contextInfo: {
           externalAdReply: {
-            title: `💦 Message from: ${contactName}\n🔥𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙴𝙲𝙷 𝙳𝙴𝚃𝙴𝚂𝚃𝙴𝙳 𝙸𝚂 Alive 𝙽𝙾𝚆`, // Your contact in WhatsApp status format
+            title: `💦 Message from: ${contactName}\n🔥𝛨𝛯𝐿𝐿𝛩 𝑇𝛪𝛭𝛮𝛥𝑆𝛥 𝑇𝛯𝐶𝛨 𝐷𝛯𝑇𝛯𝑆𝑇𝛯𝐷 𝛪𝑆 𝛥𝐿𝛪𝛻𝛯 𝛯𝛻𝛯𝑅𝑌𝐷𝛥𝑌 𝛯𝛻𝛯𝑅𝑌 𝑇𝛪𝛭𝛯`, // Your contact in WhatsApp status format
             body: "Yoh don't disturb am active🥱 Tap here",
             thumbnailUrl: smallThumbnailUrl, // Small thumbnail displayed below
             mediaType: 1, // Indicate this is an image
@@ -50,7 +50,7 @@ console.log("WhatsApp bot is ready!");
 
 
 timoth(
-  { nomCom: "kest", reaction: "🌟", nomFichier: __filename },
+  { nomCom: "test", reaction: "🌟", nomFichier: __filename },
   async (dest, zk, commandeOptions) => {
     console.log("Alive command triggered!");
 
@@ -71,7 +71,7 @@ timoth(
         ptt: true, // Send as a voice note
         contextInfo: {
           externalAdReply: {
-            title: `🌟 Message from: ${contactName}\n🔥 E.n.b Md Alive 🔥`, // Your contact in WhatsApp status format
+            title: `🌟 Message from: ${contactName}\n🔥ɪ'ᴍ ᴀ ᴡʜᴀᴛsᴀᴘʟ ʙᴏᴛ ᴍᴜʟᴛ-ᴅᴇᴠɪᴄᴇ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴛɪᴍɴᴀsᴀ-ᴛᴇᴄʜ🔥`, // Your contact in WhatsApp status format
             body: "Yoh don't disturb am active🥱 Tap here",
             thumbnailUrl: smallThumbnailUrl, // Small thumbnail displayed below
             mediaType: 1, // Indicate this is an image
