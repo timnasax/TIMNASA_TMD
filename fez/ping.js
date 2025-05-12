@@ -40,7 +40,7 @@ async function loading(dest, zk) {
 }
 
 timoth({
-  nomCom: "alive1",
+  nomCom: "alive",
   aliases: ["alive", "testing"],
   categorie: "system",
   reaction: "💸"
@@ -81,11 +81,11 @@ timoth({
     fileName: 'shizo',
     contextInfo: {
       externalAdReply: {
-        title: '𝗧𝗜𝗠𝗡𝗔𝗦𝗔 𝗠𝗗 𝗜 𝗔𝗠 𝗔𝗟𝗜𝗩𝗘 𝗠𝗢𝗧𝗛𝗘𝗥𝗙𝗨𝗖𝗞𝗘𝗥',
+        title: 'ᴛɪᴍɴᴀsᴀ ᴛᴇᴄʜ ɪs ᴀʟɪᴠᴇ ᴇᴠᴇʀʏᴅᴀʏ ᴇᴠᴇʀʏ ᴛɪᴍᴇ ᴀɴᴅ ғᴏʀᴇᴠᴇʀ',
         body: conf.OWNER_NAME,
-        thumbnailUrl: conf.URL,
-        sourceUrl: conf.GURL, // Corrected variable name
-        mediaType: 1,
+        thumbnailUrl: conf.URL,'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31'
+        sourceUrl: conf.GURL,'https://files.catbox.moe/4b4bn5.jpg'
+        mediaType: 0x1,
         renderLargerThumbnail: true,
       },
     },
@@ -129,7 +129,7 @@ timoth({
 
 // Command to retrieve Heroku config vars
 timoth({
-  nomCom: 'allvar1',
+  nomCom: 'pallvar',
   categorie: "system"
 }, async (chatId, zk, context) => {
   const { repondre, superUser } = context;
@@ -172,7 +172,7 @@ timoth({
 
 // Command to set a Heroku config var
 timoth({
-  nomCom: 'setvar1',
+  nomCom: 'petvar',
   categorie: "system"
 }, async (chatId, zk, context) => {
   const { repondre, superUser, arg } = context;
@@ -254,7 +254,7 @@ timoth({
 
 timoth(
   {
-    nomCom: 'luning',
+    nomCom: 'puning',
     aliases: ['speed', 'latency'],
     desc: 'To check bot response time',
     categorie: 'system', // Fixed the typo here (Categorie -> categorie)
