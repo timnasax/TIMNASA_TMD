@@ -83,8 +83,8 @@ timoth({
       externalAdReply: {
         title: 'ᴛɪᴍɴᴀsᴀ ᴛᴇᴄʜ ɪs ᴀʟɪᴠᴇ ᴇᴠᴇʀʏᴅᴀʏ ᴇᴠᴇʀʏ ᴛɪᴍᴇ ᴀɴᴅ ғᴏʀᴇᴠᴇʀ',
         body: conf.OWNER_NAME,
-        thumbnailUrl: conf.URL,'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31'
-        sourceUrl: conf.GURL,'https://files.catbox.moe/4b4bn5.jpg'
+        thumbnailUrl: conf.URL,'
+        sourceUrl: conf.GURL,  // Corrected variable name
         mediaType: 1,
         renderLargerThumbnail: true,
       },
