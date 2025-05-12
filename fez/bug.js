@@ -8,9 +8,9 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const Taphere = more.repeat(4001)
 
-timoth({ nomCom: "bugmenu", categorie: "menu" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "timoth", categorie: "menu" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../timnasa//zokou");
+    let { cm } = require(__dirname + "/../timnasa//timoth");
     var coms = {};
     var mode = "public";
     
