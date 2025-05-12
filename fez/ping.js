@@ -1,5 +1,5 @@
 
-const { hango } = require('../framework/hango');
+const { timoth } = require('../timnasa/timoth');
 const Heroku = require('heroku-client');
 const s = require("../set");
 const axios = require("axios");
@@ -28,7 +28,7 @@ async function loading(dest, hn) {
     "⬜⬜⬛⬛⬛⬛⬜⬜꧁60%꧂",
     "⬜⬜⬜⬜⬛⬛⬛⬛꧁80%꧂",
     "⬛⬛⬜⬜⬜⬜⬛⬛꧁100%꧂",
-    "*ELITECHWIZ 𝐌𝐃-𝐒𝐏𝐄𝐄𝐃 𝐈𝐒⚔️🌟*"
+    "*ᴛɪᴍɴᴀsᴀ ᴘɪɴɢ sᴘᴇᴇᴅ ɪs.999999999*"
   ];
 
   let { key } = await hn.sendMessage(dest, { text: 'Loading Please Wait' });
@@ -39,10 +39,10 @@ async function loading(dest, hn) {
   }
 }
 
-hango({
-  nomCom: "alive",
+timoth({
+  nomCom: "alive1",
   aliases: ["alive", "testing"],
-  categorie: "system",
+  categorie: "shoot",
   reaction: "🌟"
 }, async (dest, hn, commandeOptions) => {
   const { ms } = commandeOptions;
@@ -82,7 +82,7 @@ hango({
     fileName: 'shizo',
     contextInfo: {
       externalAdReply: {
-        title: 'ELITECHWIZ 𝐌𝐃 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 𝐀𝐋𝐋 𝐓𝐇𝐄 𝐓𝐈𝐌𝐄',
+        title: 'ᴛɪᴍɴᴀsᴀ ɪs ᴀʟɪᴠᴇ ᴇᴠᴇʀʏ ᴍᴏɴᴛʜ',
         body: conf.OWNER_NAME,
         thumbnailUrl: conf.URL,
         sourceUrl: conf.GURL, // Corrected variable name
@@ -97,10 +97,10 @@ hango({
 });
 
 
-hango({
+timoth({
   nomCom: 'restart2',
   aliases: ['reboot'],
-  categorie: "system"
+  categorie: "shoot"
 }, async (chatId, hn, context) => {
   const { repondre, superUser } = context;
 
@@ -129,9 +129,9 @@ hango({
 
 
 // Command to retrieve Heroku config vars
-hango({
-  nomCom: 'allvar',
-  categorie: "system"
+timoth({
+  nomCom: 'allvar1',
+  categorie: "shoot"
 }, async (chatId, hn, context) => {
   const { repondre, superUser } = context;
 
@@ -173,8 +173,8 @@ hango({
 
 // Command to set a Heroku config var
 hango({
-  nomCom: 'setvar',
-  categorie: "system"
+  nomCom: 'setvar1',
+  categorie: "shoot"
 }, async (chatId, hn, context) => {
   const { repondre, superUser, arg } = context;
 
@@ -214,11 +214,11 @@ hango({
   }
 });
 
-hango({
+timoth({
   nomCom: "shell",
   aliases: ["getcmd", "cmd"],
   reaction: '⚔️',
-  categorie: "system"
+  categorie: "shoot"
 }, async (context, message, params) => {
   const { repondre: sendResponse, arg: commandArgs, superUser: Owner, auteurMessage } = params;
 
@@ -253,12 +253,12 @@ hango({
   });
 });
 
-hango(
+timoth(
   {
-    nomCom: 'ping1',
+    nomCom: 'speed',
     aliases: ['speed', 'latency'],
     desc: 'To check bot response time',
-    categorie: 'system', // Fixed the typo here (Categorie -> categorie)
+    categorie: 'shoot', // Fixed the typo here (Categorie -> categorie)
     reaction: '🌟',
     fromMe: true, // Removed quotes to make it a boolean
   },
@@ -299,11 +299,11 @@ function react(dest, hn, msg, reaction) {
   hn.sendMessage(dest, { react: { text: reaction, key: msg.key } });
 }
 
-hango({
-  nomCom: 'uptime2',
+timoth({
+  nomCom: 'uptime',
   aliases: ['runtime', 'running'],
   desc: 'To check runtime',
-  categorie: 'system', // Fixed the typo here (Categorie -> categorie)
+  categorie: 'shoot', // Fixed the typo here (Categorie -> categorie)
   reaction: '⚔️',
   fromMe: true, // Removed quotes to make it a boolean
 }, async (dest, hn, commandeOptions) => {
@@ -339,10 +339,10 @@ function react(dest, hn, msg, reaction) {
 }
 
 
-hango({
+timoth({
   nomCom: 'update',
   aliases: ['redeploy', 'sync'],
-  categorie: "system"
+  categorie: "shoot"
 }, async (chatId, hn, context) => {
   const { repondre, superUser } = context;
 
@@ -368,7 +368,7 @@ hango({
         `https://api.heroku.com/apps/${herokuAppName}/builds`,
         {
           source_blob: {
-            url: "https://github.com/Keithkeizzah/ALPHA-MD/tarball/main",
+            url: "https://github.com/Next5x/TIMNASA_TMD1/tarball/main",
           },
         },
         {
@@ -394,10 +394,10 @@ hango({
   redeployApp();
 });
 
-hango({
+timoth({
   nomCom: "urlget",
   aliases: ["get", "find"],
-  categorie: "system",
+  categorie: "shoot",
   reaction: '🛄',
 }, async (sender, hn, context) => {
   const { repondre: sendResponse, arg: args } = context;
