@@ -1,5 +1,5 @@
 const {
-  timnasa
+  timoth
 } = require("../timnasa/timoth");
 const {
   getAllSudoNumbers,
