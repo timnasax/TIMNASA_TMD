@@ -2,7 +2,7 @@ const { timoth } = require('../timnasa/timoth');
 
 const isIdeaCommandEnabled = true; // Variable pour activer ou désactiver la commande "idea"
 
-timoth({ nomCom: "hi", categorie: "IA", reaction:"👨‍🏫", active: isIdeaCommandEnabled }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "gemin", categorie: "IA", reaction:"👨‍🏫", active: isIdeaCommandEnabled }, async (dest, zk, commandeOptions) => {
   const { ms, arg, repondre } = commandeOptions;
   const message = arg.join(' ');
 
