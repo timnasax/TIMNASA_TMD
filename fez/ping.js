@@ -1,43 +1,16 @@
-
-const { timoth } = require('../timnasa/timoth');
-const Heroku = require('heroku-client');
-const s = require("../set");
-const axios = require("axios");
-const speed = require("performance-now");
-const { exec } = require("child_process");
-const conf = require(__dirname + "/../set");
-// Function for delay simulation
-function delay(ms) {
-  console.log(`⏱️ delay for ${ms}ms`);
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-// Format the uptime into a human-readable string
-function runtime(seconds) {
-  const hours = Math.floor(seconds / 3600);
-  const minutes = Math.floor((seconds % 3600) / 60);
-  const secondsLeft = Math.floor(seconds % 60);
-
-  return `${hours}h ${minutes}m ${secondsLeft}s`;
-}
-
-// New loading animation with different symbols and larger progress bar
-async function loading(dest, hn) {
-  const lod = [
-    "⬛⬛⬜⬜⬜⬜⬛⬛꧁20%꧂",
-    "⬛⬛⬛⬛⬜⬜⬜⬜꧁40%꧂",
-    "⬜⬜⬛⬛⬛⬛⬜⬜꧁60%꧂",
-    "⬜⬜⬜⬜⬛⬛⬛⬛꧁80%꧂",
-    "⬛⬛⬜⬜⬜⬜⬛⬛꧁100%꧂",
-    "*ᴛɪᴍɴᴀsᴀ ᴘɪɴɢ sᴘᴇᴇᴅ ɪs.999999999*"
-  ];
-
-  let { key } = await hn.sendMessage(dest, { text: 'Loading Please Wait' });
-
-  for (let i = 0; i < lod.length; i++) {
-    await hn.sendMessage(dest, { text: lod[i], edit: key });
-    await delay(500); // Adjust the speed of the animation here
-  }
-}
+const {
+  timoth
+} = require("./../timnasa/timoth");
+const {
+  format,
+  runtime
+} = require('../timnasa/mesfonctions');
+const os = require('os');
+const speed = require('performance-now');
+const {
+  performance
+} = require('perf_hooks');
+const conf = require('../set');
 
 timoth({
   nomCom: "alive1",
