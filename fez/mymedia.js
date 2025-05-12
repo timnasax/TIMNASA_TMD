@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const Taphere = more.repeat(4001)
 
-timoth({ nomCom: "timnasuprot", categorie: "My Contact" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "mymedia", categorie: "My Contact" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../timnasa//timoth");
     var coms = {};
@@ -38,14 +38,21 @@ let infoMsg =  `
 ╭──━━━━━━━━━━━━━━━━━━━❍ 
 │
 │  _*Support channel by follow*_ ;https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31
+
 │  _*Join Our WhatsApp group*_ ;https://chat.whatsapp.com/BgNXVP0zSl8KqUrLFfdJMP
+
 │  _*WhatsApp Contact As*_ ;Https://wa.me/255784766591 
+
 │  _*WhatsApp Bot Fork And Star*_ ;https://github.com/Next5x/TIMNASA_TMD1
-│  _*Telegram Bot*_ ;Https://t.me/@fredidurry_bot
+│  ༒༒༒༒༒༒༒༒༒༒༒༒
 │  _*Telegram Contact As*_ ; t.me/timnasa 
+
 │  _*Instagram*_ ;https://www.instagram.com/mgaya3370?igsh=YzljYTk1ODg3Zg==
+
 │  _*Facebook*_ ;https://www.facebook.com/profile.php?id=61573096304445&mibextid=ZbWKwL
+
 │  _*YouTube Channel Subscribe For Tutorial*_ ;https://youtube.com/@timnasa-tmd?si=pnitcokiKJdhzhMA
+
 │  _*Follow My Github For About Info*_ ;https://github.com/Next5x/
 │
 ╰──━━━━━━━━━━━━━━━━━━━❍ 
@@ -77,7 +84,7 @@ let menuMsg = `
 ┃⡿⠁⣰⣿⣿⣿⣿⣿⣿⣿⣿⠗⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿
 ┃⠁⣼⣿⣿⣿⣿⣿⣿⡿⠋⠄⠄⠄⣠⣄⢰⣿⣿⣿⣿⣿⣿
 ┃⣼⣿⣿⣿⣿⣿⣿⡇⠄⢀⡴⠚⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-┃⢰⣿⣿⣿⣿⣿⡿⣿⣿⠴⠋⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⡟
+┃⢰⣿⣿⣿⣿timnasa-tech⠋⠄⠄⢸⣿⣿⣿
 ┃⣿⣿⣿⣿⣿⣿⠃⠈⠁⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⡟⢀
 ┃⣿⣿⣿⣿⣿⣿⠄⠄⠄⠄⢶⣿⣿⣿⣿⣿⣿⣿⣿⠏⢀⣾
 ┃⣿⣿⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⠋⣠⣿⣿
