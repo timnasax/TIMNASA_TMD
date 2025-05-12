@@ -4,7 +4,7 @@ const ytSearch = require('yt-search');
 
 // Define the command with aliases
 timoth({
-  nomCom: "music",
+  nomCom: "play",
   aliases: ["music", "ytmp3", "audio", "mp3"],
   categorie: "Search",
   reaction: "🎙️"
@@ -70,8 +70,8 @@ timoth({
       mimetype: 'audio/mp4',
       contextInfo: {
         externalAdReply: {
-          title: videoDetails.title,
-          body: videoDetails.title,
+          title: videoDetails.title,"timnasa"
+          body: videoDetails.title,"timnasa"
           mediaType: 1,
           sourceUrl: 'https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f',
           thumbnailUrl: firstVideo.thumbnail,
