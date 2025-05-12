@@ -10,7 +10,7 @@ timoth(
     // URLs and configurations
     const fullImageUrl = "https://files.catbox.moe/bq7ym6.jpg"; // Full image URL
     const smallThumbnailUrl = "https://files.catbox.moe/bq7ym6.jpg"; // Small thumbnail URL
-    const randomAudio = "https://files.catbox.moe/615pd6.mp3"; // Voice note URL
+    const randomAudio = "https://files.catbox.moe/sqrx9g.mp3"; // Voice note URL
     const sourceUrl = "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31"; // Channel link
     const contactName = commandeOptions?.ms?.pushName || "Unknown Contact"; // Sender's name or "Unknown Contact"
 
@@ -24,7 +24,7 @@ timoth(
         ptt: true, // Send as a voice note
         contextInfo: {
           externalAdReply: {
-            title: `💦 Message from: ${contactName}\n🔥𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙴𝙲𝙷 𝙳𝙴𝚃𝙴𝚂𝚃𝙴𝙳 𝙸𝚂 Alive 𝙽𝙾𝚆`, // Your contact in WhatsApp status format
+            title: `💦 Message from: ${contactName}\nᴛɪᴍɴᴀsᴀ-ᴛᴇᴄʜ ᴛᴍᴅ ɪs ᴀʟɪᴠᴇ ᴇᴠᴇʀʏᴅᴀʏ ᴇᴠᴇʀʏ ᴛɪᴍᴇ`, // Your contact in WhatsApp status format
             body: "Yoh don't disturb am active🥱 Tap here",
             thumbnailUrl: smallThumbnailUrl, // Small thumbnail displayed below
             mediaType: 1, // Indicate this is an image
@@ -57,7 +57,7 @@ timoth(
     // URLs and configurations
     const fullImageUrl = "https://files.catbox.moe/bq7ym6.jpg"; // Full image URL
     const smallThumbnailUrl = "https://files.catbox.moe/bq7ym6.jpg"; // Small thumbnail URL
-    const randomAudio = "https://files.catbox.moe/wdap4t.mp3"; // Voice note URL
+    const randomAudio = "https://files.catbox.moe/0njng2.mp3"; // Voice note URL
     const sourceUrl = "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31"; // Channel link
     const contactName = commandeOptions?.ms?.pushName || "Unknown Contact"; // Sender's name or "Unknown Contact"
 
@@ -71,7 +71,7 @@ timoth(
         ptt: true, // Send as a voice note
         contextInfo: {
           externalAdReply: {
-            title: `🌟 Message from: ${contactName}\n🔥 E.n.b Md Alive 🔥`, // Your contact in WhatsApp status format
+            title: `🌟 Message from: ${contactName}\n🔥ᴛɪᴍɴᴀsᴀ ᴍᴜʟᴛɪᴘʟᴇ ᴅᴇᴠɪᴄᴇ ᴡᴀᴛsᴀᴘᴘ ʙᴏᴛ🔥`, // Your contact in WhatsApp status format
             body: "Yoh don't disturb am active🥱 Tap here",
             thumbnailUrl: smallThumbnailUrl, // Small thumbnail displayed below
             mediaType: 1, // Indicate this is an image
