@@ -23,8 +23,8 @@ timoth({
     'externalAdReply': {
       'title': "TIMNASA_TIMD My Ultra Speed Response",
       'body': "Ping Results : " + _0x451c3b,
-      'sourceUrl': "https://files.catbox.moe/s2mnnr.jpg",
-      'thumbnailUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
+      'sourceUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
+      'thumbnailUrl': "https://files.catbox.moe/s2mnnr.jpg",
       'mediaType': 0x1,
       'showAdAttribution': true
     }
@@ -34,7 +34,7 @@ timoth({
     'vcard': "BEGIN:VCARD\nVERSION:3.0\nFN: TIMNASA MD\nORG: TIMNASA Nexus;\nTEL;type=CELL;type=VOICE;waid=255784766591:+255 756469954 977\nEND:VCARD"
   };
   await _0x41d5d3.sendMessage(_0x4cfdc6, {
-    'text': "timnasa-m͟d͟-speeed-is🚀999999999🚀..",
+    'text': "𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙼𝙳 𝚂𝙿𝙴𝙴𝙳 𝙸𝚂.999999999🥱..",
     'contextInfo': _0x41d2b1,
     'contacts': {
       'displayName': "TIMNASA-TMD Verified Contact",
@@ -61,8 +61,8 @@ timoth({
     'externalAdReply': {
       'title': "TIMNASA- System Uptime",
       'body': "Bot has been running for: " + _0x2f3abc,
-      'sourceUrl': "https://files.catbox.moe/s2mnnr.jpg",
-      'thumbnailUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
+      'sourceUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
+      'thumbnailUrl': "https://files.catbox.moe/s2mnnr.jpg",
       'mediaType': 0x1,
       'showAdAttribution': true
     }
