@@ -1,5 +1,5 @@
 const {
-  timoth
+  poka
 } = require("./../timnasa/timoth");
 const {
   format,
