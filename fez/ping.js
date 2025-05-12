@@ -85,7 +85,7 @@ timoth({
         body: conf.OWNER_NAME,
         thumbnailUrl: conf.URL,'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31'
         sourceUrl: conf.GURL,'https://files.catbox.moe/4b4bn5.jpg'
-        mediaType: 0x1,
+        mediaType: 1,
         renderLargerThumbnail: true,
       },
     },
