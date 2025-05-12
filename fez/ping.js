@@ -62,8 +62,7 @@ timoth({
       'title': "TIMNASA- System Uptime",
       'body': "Bot has been running for: " + _0x2f3abc,
       'sourceUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
-      'thumbnailUrl': "https://files.catbox.moe/s2mnnr.jpg",
-      'audiourl': "https://files.catbox.moe/7vom1s.mp3"
+      'thumbnailUrl': "https://files.catbox.moe/s2mnnr.jpg"
       'mediaType': 0x1,
       'showAdAttribution': true
     }
