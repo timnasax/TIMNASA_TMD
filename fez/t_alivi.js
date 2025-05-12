@@ -10,7 +10,7 @@ timoth(
     // URLs and configurations
     const fullImageUrl = "https://files.catbox.moe/4b4bn5.jpg"; // Full image URL
     const smallThumbnailUrl = "https://files.catbox.moe/bq7ym6.jpg"; // Small thumbnail URL
-    const randomAudio = "https://files.catbox.moe/sqrx9g.mp3"; // Voice note URL
+    const randomAudio = "https://files.catbox.moe/615pd6.mp3"; // Voice note URL
     const sourceUrl = "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31"; // Channel link
     const contactName = commandeOptions?.ms?.pushName || "Unknown Contact"; // Sender's name or "Unknown Contact"
 
@@ -57,7 +57,7 @@ timoth(
     // URLs and configurations
     const fullImageUrl = "https://files.catbox.moe/bq7ym6.jpg"; // Full image URL
     const smallThumbnailUrl = "https://files.catbox.moe/bq7ym6.jpg"; // Small thumbnail URL
-    const randomAudio = "https://files.catbox.moe/sqrx9g.mp3"; // Voice note URL
+    const randomAudio = "https://files.catbox.moe/615pd6.mp3"; // Voice note URL
     const sourceUrl = "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31"; // Channel link
     const contactName = commandeOptions?.ms?.pushName || "Unknown Contact"; // Sender's name or "Unknown Contact"
 
@@ -98,7 +98,7 @@ console.log("WhatsApp bot is ready!");
           isForwarded: true, // Marks the message as forwarded
           mentionedJid: [senderId], // Mention the sender
           externalAdReply: {
-            title: "🔥ACHA USENGE LUCKY MD ACTIVE 🔥",
+            title: "🔥ACHA USENGE TIMNASA TMD ACTIVE 🔥",
             body: `Message from 💥 ${userMention}\n💥 Visit the channel: ${sourceUrl}`,
             thumbnailUrl: defaultProfilePic, // Placeholder profile picture
             mediaType: 1, // Indicates this is an image
