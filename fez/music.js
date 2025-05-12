@@ -70,8 +70,8 @@ timoth({
       mimetype: 'audio/mp4',
       contextInfo: {
         externalAdReply: {
-          title: videoDetails.title,"timnasa"
-          body: videoDetails.title,"timnasa"
+          title: videoDetails.title,
+          body: videoDetails.title,
           mediaType: 1,
           sourceUrl: 'https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f',
           thumbnailUrl: firstVideo.thumbnail,
