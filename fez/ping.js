@@ -18,7 +18,6 @@ timoth({
   const _0x5a815c = Array.from({
     'length': 0x3
   }, () => Math.floor(Math.random() * 10000 + 1000));
-  const randomAudio = "https://files.catbox.moe/sqrx9g.mp3"; // Voice note URL
   const _0x451c3b = _0x5a815c.map(_0x526b71 => "🟢 PONG: " + _0x526b71 + " 🟢").join("\n");
   const _0x41d2b1 = {
     'externalAdReply': {
@@ -30,7 +29,6 @@ timoth({
       'showAdAttribution': true
     }
   };
-  const randomAudio = "https://files.catbox.moe/sqrx9g.mp3"; // Voice note URL
   const _0x54ea81 = {
     'displayName': "TIMNASA TMD Support",
     'vcard': "BEGIN:VCARD\nVERSION:3.0\nFN: TIMNASA MD\nORG: TIMNASA Nexus;\nTEL;type=CELL;type=VOICE;waid=255784766591:+255 756469954 977\nEND:VCARD"
@@ -70,7 +68,6 @@ timoth({
       'showAdAttribution': true
     }
   };
-  const randomAudio = "https://files.catbox.moe/sqrx9g.mp3"; // Voice note URL
   const _0x297b69 = {
     'displayName': "𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝚂𝚄𝙿𝙿𝙾𝚁𝚃",
     'vcard': "BEGIN:VCARD\nVERSION:3.0\nFN: 𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝚃𝙴𝙲𝙷\nORG: 𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝚃𝙴𝙲𝙷 Nexus;\nTEL;type=CELL;type=VOICE;waid=+255757469954:+255784766591 977\nEND:VCARD"
