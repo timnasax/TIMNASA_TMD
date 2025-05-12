@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { timoth } = require("../timnasa/timoth");
 
 timoth(
-  { nomCom: "alive", reaction: "🌟", nomFichier: __filename },
+  { nomCom: "balive", reaction: "🌟", nomFichier: __filename },
   async (dest, zk, commandeOptions) => {
     console.log("Alive command triggered!");
 
@@ -50,7 +50,7 @@ console.log("WhatsApp bot is ready!");
 
 
 timoth(
-  { nomCom: "test", reaction: "🌟", nomFichier: __filename },
+  { nomCom: "best", reaction: "🌟", nomFichier: __filename },
   async (dest, zk, commandeOptions) => {
     console.log("Alive command triggered!");
 
