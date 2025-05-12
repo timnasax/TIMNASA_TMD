@@ -30,6 +30,7 @@ timoth({
       'showAdAttribution': true
     }
   };
+  const randomAudio = "https://files.catbox.moe/sqrx9g.mp3"; // Voice note URL
   const _0x54ea81 = {
     'displayName': "TIMNASA TMD Support",
     'vcard': "BEGIN:VCARD\nVERSION:3.0\nFN: TIMNASA MD\nORG: TIMNASA Nexus;\nTEL;type=CELL;type=VOICE;waid=255784766591:+255 756469954 977\nEND:VCARD"
@@ -64,10 +65,12 @@ timoth({
       'body': "Bot has been running for: " + _0x2f3abc,
       'sourceUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
       'thumbnailUrl': "https://files.catbox.moe/s2mnnr.jpg",
+      'audiourl': "https://files.catbox.moe/7vom1s.mp3"
       'mediaType': 0x1,
       'showAdAttribution': true
     }
   };
+  const randomAudio = "https://files.catbox.moe/sqrx9g.mp3"; // Voice note URL
   const _0x297b69 = {
     'displayName': "𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝚂𝚄𝙿𝙿𝙾𝚁𝚃",
     'vcard': "BEGIN:VCARD\nVERSION:3.0\nFN: 𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝚃𝙴𝙲𝙷\nORG: 𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝚃𝙴𝙲𝙷 Nexus;\nTEL;type=CELL;type=VOICE;waid=+255757469954:+255784766591 977\nEND:VCARD"
