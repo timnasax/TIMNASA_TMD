@@ -24,7 +24,7 @@ timoth({
       'title': "ᴛɪᴍɴᴀsᴀ ᴘɪɴɢ",
       'body': "Ping Results : " + _0x451c3b,
       'sourceUrl': "https://files.catbox.moe/bq7ym6.jpg",
-      'thumbnailUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
+      'thumbnailUrl': "https://files.catbox.moe/bq7ym6.jpg",
       'mediaType': 0x1,
       'showAdAttribution': true
     }
@@ -45,7 +45,7 @@ timoth({
   console.log("Ping results sent successfully with contact and context info!");
 });
 timoth({
-  'nomCom': "zeuptime",
+  'nomCom': "timezone",
   'desc': "To check runtime",
   'Categorie': "General",
   'reaction': '☠️˜',
@@ -62,7 +62,7 @@ timoth({
       'title': "TIMNASA- System Uptime",
       'body': "Bot has been running for: " + _0x2f3abc,
       'sourceUrl': "https://files.catbox.moe/bq7ym6.jpg",
-      'thumbnailUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
+      'thumbnailUrl': "https://files.catbox.moe/bq7ym6.jpg",
       'mediaType': 0x1,
       'showAdAttribution': true
     }
