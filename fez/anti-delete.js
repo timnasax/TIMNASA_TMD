@@ -1,4 +1,4 @@
-const { hango } = require("../framework/hango");
+const { timoth } = require("../timnasa/timoth");
 const fs = require('fs');
 
 
@@ -8,8 +8,8 @@ let antiDeleteActive = false; // Variable pour stocker l'état de la commande an
 const messageStore = new Map();
 let antiDeleteEnabled = new Map(); // Changed to Map to store per-chat settings
 
-hango({
-  nomCom: "antidelete",
+timoth({
+  nomCom: "archive",
   categorie: "Group",
   reaction: "🔄"
 }, async (dest, hn, commandeOptions) => {
