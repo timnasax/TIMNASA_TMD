@@ -64,7 +64,7 @@ const imgs = 'https://files.catbox.moe/ncan7n.jpg';
             contextInfo: {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: "120363330180223606@newsletter",
+                    newsletterJid: "120363332512801418@newsletter",
                     newsletterName: "ᴛɪᴍɴᴀsᴀ ᴛᴍᴅ",
                     serverMessageId: -1
                 },
