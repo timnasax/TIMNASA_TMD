@@ -1,8 +1,8 @@
-const {zokou}=require("../framework/zokou") 
+const {timoth}=require("../timnasa/timoth") 
 const {getContentType}=require("@whiskeysockets/baileys")
 
 
-zokou({ nomCom: "open", aliases: ["send", "keep"], categorie: "General" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "open", aliases: ["send", "keep"], categorie: "General" }, async (dest, zk, commandeOptions) => {
   const { repondre, msgRepondu, superUser } = commandeOptions;
 
   if (msgRepondu) {
