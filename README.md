@@ -8,7 +8,7 @@
   <img src="https://github-readme-stats.vercel.app/api?username=Qartde&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical" alt="GitHub Repo Stats" width="800">
 
   <!-- Repo Activity Stats Screen -->
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=deshallos1&repo=Rahzayn" alt="Pinned GitHub Repo Activity" width="800"> 
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=deshallos1&repo=Next55x" alt="Pinned GitHub Repo Activity" width="800"> 
   # ☉︎𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙴𝙲𝙷☉︎ ©𝟸𝟶𝟸𝟻
   █▄▄ ███ █▄▄█▄▄ ███ █▄▄
   █▄▄ ███ █▄▄█▄▄ ███ █▄▄
