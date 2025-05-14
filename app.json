@@ -1,6 +1,6 @@
 {
-  "name": "⁠TIMNASA-TMD MULT DEVICE",
-  "description": "TIMNASA-TMD Whatsapp device bot made by TIMOTH TIMNASA to help Whatsapp users to enjoy while helping...",
+  "name": "TIMNASA-TMD",
+  "description": "☢️TIMNASA☢️ Whatsapp device bot made by FrediEzra to help Whatsapp users to enjoy while helping...",
   "keywords": [
     "bot",
     "node",
@@ -14,13 +14,19 @@
   "env": {
     "PREFIX": {
       "description": "Choose your bot's prefix",
-      "value": ".",
+      "value": "~",
       "required": true
     },
     "AUTO_READ_STATUS": {
       "description": "Your contact status will be read automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
       "value": "yes",
       "required": false
+    },
+      "AUDIO_REPLY":
+    {
+      "description":"Enter yes for your bot to auto reply audio in all chats",
+      "value":"yes",
+      "required":false
     },
     "AUTO_REPLY": {
       "description": "when enabled it automatically sends  auto reply message to members in your pm",
@@ -53,10 +59,30 @@
       "value": "yes",
       "required": false
     },
+    "AUTO_STATUS_TEXT": {
+      "description": "type your genuine status message",
+      "value": "💲YOUR STATUS VIEWED BY ☢️TIMNASA☢️ SUCCESSFUL 😇✅✅",
+      "required": false
+    },
+    "AUTO_STATUS_REPLY": {
+      "description": "type your genuine status message",
+      "value": "no",
+      "required": false
+    },
+    "ANTI_CALL_TEXT": {
+      "description": "Type your anticall message to always send when calls are declined.You can as well leave it blank",
+      "value": "",
+      "required": false
+    },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
-      "value": "⁠TIMNASA-TMD1",
+      "value": "☢️ TIMNASA-TMD☢️",
       "required": false 
+    },
+    "CHAT_BOT": {
+      "description": "urs if you want bot to chat automatic",
+      "value": "yes",
+      "required": false
     },
     "PUBLIC_MODE": {
       "description": "Set 'yes' to make your bot public or 'no' to keep it private",
@@ -65,7 +91,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Insert your Heroku API key (required)",
-      "value": "TIMNASA-TMD1",
+      "value": "",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -80,7 +106,7 @@
     },
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
-      "value": "𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝚃𝙼𝙳",
+      "value": "TIMNASA-TMD",
       "required": false
     },
     "URL": {
@@ -105,7 +131,7 @@
     },
     "WARN_COUNT": {
       "description": "Set the warning limit for warning commands",
-      "value": "5",
+      "value": "3",
       "required": false
     },
     "STARTING_BOT_MESSAGE": {
@@ -115,12 +141,12 @@
     },
     "PRESENCE": {
       "description": "Mark your presence: 1 for online, 2 for typing, 3 for recording, or leave blank for real state",
-      "value": "1",
+      "value": "2",
       "required": false
     },
     "ANTI_DELETE_MESSAGE": {
       "description": "Enable anti-delete message (set 'yes' to activate or 'no' to deactivate)",
-      "value": "no",
+      "value": "yes",
       "required": false
     },
     "ANTI_CALL": {
