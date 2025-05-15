@@ -1,6 +1,6 @@
 {
   "name": "TIMNASA-TMD",
-  "description": "☢️TIMNASA☢️ Whatsapp device bot made by FrediEzra to help Whatsapp users to enjoy while helping...",
+  "description": "timnasa-tech Whatsapp device bot made by timotheomgya to help Whatsapp users to enjoy while helping...",
   "keywords": [
     "bot",
     "node",
@@ -14,7 +14,7 @@
   "env": {
     "PREFIX": {
       "description": "Choose your bot's prefix",
-      "value": "~",
+      "value": ".",
       "required": true
     },
     "AUTO_READ_STATUS": {
@@ -61,7 +61,7 @@
     },
     "AUTO_STATUS_TEXT": {
       "description": "type your genuine status message",
-      "value": "💲YOUR STATUS VIEWED BY ☢️TIMNASA☢️ SUCCESSFUL 😇✅✅",
+      "value": "VIEW YOUR STATUS SUCCESSFUL 😇✅✅",
       "required": false
     },
     "AUTO_STATUS_REPLY": {
@@ -71,12 +71,12 @@
     },
     "ANTI_CALL_TEXT": {
       "description": "Type your anticall message to always send when calls are declined.You can as well leave it blank",
-      "value": "",
+      "value": "Now i'm buys",
       "required": false
     },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
-      "value": "☢️ TIMNASA-TMD☢️",
+      "value": "TIMNASA-TMD1",
       "required": false 
     },
     "CHAT_BOT": {
@@ -91,7 +91,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Insert your Heroku API key (required)",
-      "value": "",
+      "value": "TIMNASA-TMD1",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -106,7 +106,7 @@
     },
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
-      "value": "TIMNASA-TMD",
+      "value": "timnasa-tech",
       "required": false
     },
     "URL": {
@@ -125,7 +125,7 @@
       "required": false  
     },
     "NUMERO_OWNER": {
-      "description": "Your phone number (exclude '+' and area code, e.g., '255752593977')",
+      "description": "Your phone number (exclude '+' and area code, e.g., '255774766591')",
       "value": "255784766591",
       "required": false
     },
