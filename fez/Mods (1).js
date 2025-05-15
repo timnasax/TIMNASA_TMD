@@ -1,5 +1,5 @@
 
-const { zokou } = require('../framework/zokou');
+const { timoth } = require('../timnasa/timoth');
 const axios = require("axios")
 let { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
 const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("../bdd/banUser");
@@ -14,7 +14,7 @@ const sleep =  (ms) =>{
   } ;
 
 
-  zokou({ nomCom: "tgs", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+  timoth({ nomCom: "tgs", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
     const { ms, repondre, arg, nomAuteurMessage, superUser } = commandeOptions;
   
     if (!superUser) {
@@ -48,7 +48,7 @@ const sleep =  (ms) =>{
         type = 'not animated sticker'
       }
   
-      let msg = `   Charles-md-stickers-dl
+      let msg = `   timnasa-md-stickers-dl
       
   *Name :* ${stickers.data.result.name}
   *Type :* ${type} 
@@ -111,7 +111,7 @@ zokou({ nomCom: "crew", categorie: "Mods" }, async (dest, zk, commandeOptions) =
 
 });
 
-zokou({ nomCom: "left", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "gbye", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage } = commandeOptions;
   if (!verifGroupe) { repondre("group only"); return };
@@ -123,7 +123,7 @@ zokou({ nomCom: "left", categorie: "Mods" }, async (dest, zk, commandeOptions) =
   await zk.groupLeave(dest)
 });
 
-zokou({ nomCom: "join", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "join", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage } = commandeOptions;
 
@@ -141,7 +141,8 @@ zokou({ nomCom: "join", categorie: "Mods" }, async (dest, zk, commandeOptions) =
 })
 
 
-zokou({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+z
+timoth({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
@@ -180,7 +181,7 @@ zokou({ nomCom: "block", categorie: "Mods" }, async (dest, zk, commandeOptions) 
               } else {
                 jid = auteurMsgRepondu
              await zk.updateBlockStatus(jid, "block")
-    .then( repondre('succes'))   } ;
+    .then( repondre('succes blocked'))   } ;
 
   });
 
@@ -199,15 +200,15 @@ zokou({ nomCom: "unblock", categorie: "Mods" }, async (dest, zk, commandeOptions
                 jid = dest
 
                  await zk.updateBlockStatus(jid, "unblock")
-    .then( repondre('succes')) 
+    .then( repondre('succes unblock')) 
               } else {
                 jid = auteurMsgRepondu
              await zk.updateBlockStatus(jid, "unblock")
-    .then( repondre('succes'))   } ;
+    .then( repondre('succes unblock'))   } ;
   
     });
 
-zokou({ nomCom: "kickall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "kickall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
 
   const { auteurMessage ,ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser,prefixe } = commandeOptions
 
@@ -242,7 +243,7 @@ await zk.groupParticipantsUpdate(
 }
 });
 
-zokou({
+timoth({
     nomCom: 'ban',
     categorie: 'Mods',
 }, async (dest, zk, commandeOptions) => {
@@ -291,7 +292,7 @@ zokou({
 
 
 
-zokou({
+timoth({
     nomCom: 'bangroup',
     categorie: 'Mods',
 }, async (dest, zk, commandeOptions) => {
@@ -339,7 +340,7 @@ zokou({
 });
 
 
-zokou({
+timoth({
   nomCom: 'onlyadmin',
   categorie: 'Group',
 }, async (dest, zk, commandeOptions) => {
@@ -386,7 +387,7 @@ if(!verifGroupe) {repondre('order reservation for groups' ) ; return };
 } else { repondre('You are not entitled to this order')}
 });
 
-zokou({
+timoth({
   nomCom: 'sudo',
   categorie: 'Mods',
 }, async (dest, zk, commandeOptions) => {
@@ -435,7 +436,90 @@ if (!superUser) {repondre('This command is only allowed to the bot owner') ; ret
 });
 
 
-zokou({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+
+  const { repondre , msgRepondu , superUser, auteurMessage } = commandeOptions;
+  
+    if ( superUser) { 
+  
+      if(msgRepondu) {
+
+        console.log(msgRepondu) ;
+
+        let msg ;
+  
+        if (msgRepondu.imageMessage) {
+  
+          
+  
+       let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.imageMessage) ;
+       // console.log(msgRepondu) ;
+       msg = {
+  
+         image : { url : media } ,
+         caption : msgRepondu.imageMessage.caption,
+         
+       }
+      
+  
+        } else if (msgRepondu.videoMessage) {
+  
+          let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.videoMessage) ;
+  
+          msg = {
+  
+            video : { url : media } ,
+            caption : msgRepondu.videoMessage.caption,
+            
+          }
+  
+        } else if (msgRepondu.audioMessage) {
+      
+          let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.audioMessage) ;
+         
+          msg = {
+     
+            audio : { url : media } ,
+            mimetype:'audio/mp4',
+             }     
+          
+        } else if (msgRepondu.stickerMessage) {
+  
+      
+          let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
+  
+          let stickerMess = new Sticker(media, {
+            pack: 'timoth tags',
+            type: StickerTypes.CROPPED,
+            categories: ["🤩", "🎉"],
+            id: "12345",
+            quality: 70,
+            background: "transparent",
+          });
+          const stickerBuffer2 = await stickerMess.toBuffer();
+         
+          msg = { sticker: stickerBuffer2}
+  
+  
+        }  else {
+            msg = {
+               text : msgRepondu.conversation,
+            }
+        }
+  
+      zk.sendMessage(auteurMessage,msg)
+  
+      } else { repondre('Mention the message that you want to save') }
+  
+  } else {
+    repondre('only mods can use this command')
+  }
+  
+
+  })
+;
+
+timoth({ nomCom: "review", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { repondre , msgRepondu , superUser, auteurMessage } = commandeOptions;
   
@@ -517,90 +601,7 @@ zokou({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) =
 
   })
 ;
-
-zokou({ nomCom: "vv", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
-
-  const { repondre , msgRepondu , superUser, auteurMessage } = commandeOptions;
-  
-    if ( superUser) { 
-  
-      if(msgRepondu) {
-
-        console.log(msgRepondu) ;
-
-        let msg ;
-  
-        if (msgRepondu.imageMessage) {
-  
-          
-  
-       let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.imageMessage) ;
-       // console.log(msgRepondu) ;
-       msg = {
-  
-         image : { url : media } ,
-         caption : msgRepondu.imageMessage.caption,
-         
-       }
-      
-  
-        } else if (msgRepondu.videoMessage) {
-  
-          let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.videoMessage) ;
-  
-          msg = {
-  
-            video : { url : media } ,
-            caption : msgRepondu.videoMessage.caption,
-            
-          }
-  
-        } else if (msgRepondu.audioMessage) {
-      
-          let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.audioMessage) ;
-         
-          msg = {
-     
-            audio : { url : media } ,
-            mimetype:'audio/mp4',
-             }     
-          
-        } else if (msgRepondu.stickerMessage) {
-  
-      
-          let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
-  
-          let stickerMess = new Sticker(media, {
-            pack: 'BMW-MD-TAG',
-            type: StickerTypes.CROPPED,
-            categories: ["🤩", "🎉"],
-            id: "12345",
-            quality: 70,
-            background: "transparent",
-          });
-          const stickerBuffer2 = await stickerMess.toBuffer();
-         
-          msg = { sticker: stickerBuffer2}
-  
-  
-        }  else {
-            msg = {
-               text : msgRepondu.conversation,
-            }
-        }
-  
-      zk.sendMessage(auteurMessage,msg)
-  
-      } else { repondre('Mention the message that you want to save') }
-  
-  } else {
-    repondre('only mods can use this command')
-  }
-  
-
-  })
-;
-zokou({
+timoth({
   nomCom : 'mention',
   categorie : 'Mods',
 } , async (dest,zk,commandeOptions) => {
