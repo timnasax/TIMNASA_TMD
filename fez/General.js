@@ -1,8 +1,8 @@
-const { zokou } = require("../framework/zokou");
+const { timoth } = require("../timnasa/timoth");
 const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../bdd/sudo")
 const conf = require("../set");
 
-zokou({ nomCom: "owner", categorie: "General", reaction: "🤝" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "owner", categorie: "General", reaction: "🤝" }, async (dest, zk, commandeOptions) => {
     const { ms , mybotpic } = commandeOptions;
     
   const thsudo = await isSudoTableNotEmpty()
@@ -51,17 +51,17 @@ zokou({ nomCom: "owner", categorie: "General", reaction: "🤝" }, async (dest, 
   }
 });
 
-zokou({ nomCom: "dev", categorie: "General", reaction: "🚘" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "agents", categorie: "General", reaction: "🚘" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "Charleske", numero: "254759626063" },
-      { nom: "᚛Ibrahim᚜", numero: "254710772666" },
-      { nom: "BELTAH TECH", numero: "254114141192" },
+      { nom: "timnasa-tech", numero: "255784766581" },
+      { nom: "᚛asistance᚜", numero: "255756469964" },
+      { nom: "you", numero: "2557xxxxxxx" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "WELCOME TO CHARLESKE XMD HELP CENTER! ASK FOR HELP FROM ANY OF THE DEVELOPERS BELOW:\n\n";
+    let message = "WELCOME TO TIMNASA-TMD HELP CENTER! ASK FOR HELP FROM ANY OF THE DEVELOPERS BELOW:\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -92,7 +92,7 @@ else {
 }
 });
 
-zokou({ nomCom: "support", categorie: "General" }, async (dest, zk, commandeOptions) => {
+//({ nomCom: "support", categorie: "General" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
   repondre("THANK YOU FOR CHOOSING CHARLESKE-XMD, HERE ARE OUR SUPPORTIVE LINKS\n\n ☉ CHANNEL LINK IS HERE ☉ \n\n❒⁠⁠⁠⁠[ https://https://whatsapp.com/channel/0029Vao2hgeChq6HJ5bmlZ3K ] \n\n ☉ GROUP LINK IS HERE ☉\n\n❒⁠⁠⁠⁠[ https://https://chat.whatsapp.com/EFh0BWKa0Uf92A7RgBwpuu ] \n\n ☉YOUTUBE LINK IS HERE ☉\n\n❒⁠⁠⁠⁠[https://youtube.com/@charles_odhiambo_official?si=n6lKIy2ViQauVS_n] \n\n\n𝑪𝒓𝒆ated by ®Charles ke") 
